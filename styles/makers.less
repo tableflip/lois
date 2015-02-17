@@ -1,0 +1,58 @@
+/*****************************************************************************/
+/* Makers: Style */
+/*****************************************************************************/
+@grid-width: 1170px;
+@text-color: #dadada;
+
+.makers-grid {
+
+	width: 100%;
+	max-width: @grid-width;
+	margin-top: 6vmax;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+.maker-icon {
+
+	flex-basis: 20%;
+	min-width: 100px;
+	padding-left: 2.2vmax;
+	padding-right: 2.2vmax;
+	padding-top: 2.2vmax;
+	padding-bottom: 1.5vmax;
+	box-sizing: border-box;
+
+	.avatar-container {
+		width: 100%;
+		position: relative;
+	
+		&:before{
+			content: "";
+			display: block;
+			padding-top: 100%;
+		}
+
+		.avatar {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			border-radius: 50%;
+			background-size: cover;
+		}
+	}
+
+	.name {
+		color: @text-color;
+		font-size: 1.525vw;
+		text-align: center;
+		margin-top: 1.3vmax;
+	}
+
+}
