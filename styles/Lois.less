@@ -1,0 +1,139 @@
+/*****************************************************************************/
+/* Global CSS Styles */
+/*****************************************************************************/
+
+@black: #222222;
+@yellow: #fbd027;
+@blue: #19aed5;
+@lightgrey: #f2f2f2;
+@midgrey: #e4e4e4;
+@darkgrey: #444444;
+@white: #ffffff;
+@clear: rgba(0, 0, 0, 0);
+@tint: rgba(0, 0, 0, 0.6);
+@heiti: 'STHeitiSC-Medium', sans-serif;
+
+@font-face {
+	font-family:'STHeitiSC-Medium';
+	src: url('assets/fonts/STHeitiSC-Medium_gdi.eot');
+	src: url('assets/fonts/STHeitiSC-Medium_gdi.eot?#iefix') format('embedded-opentype'),
+		url('assets/fonts/STHeitiSC-Medium_gdi.woff') format('woff'),
+		url('assets/fonts/STHeitiSC-Medium_gdi.ttf') format('truetype'),
+		url('assets/fonts/STHeitiSC-Medium_gdi.otf') format('opentype'),
+		url('assets/fonts/STHeitiSC-Medium_gdi.svg#STHeitiSC-Medium') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-0178;
+}
+
+@font-face {
+	font-family: 'lois';
+	src:url('assets/fonts/lois.eot?-4jejzu');
+	src:url('assets/fonts/lois.eot?#iefix-4jejzu') format('embedded-opentype'),
+		url('assets/fonts/lois.woff?-4jejzu') format('woff'),
+		url('assets/fonts/lois.ttf?-4jejzu') format('truetype'),
+		url('assets/fonts/lois.svg?-4jejzu#lois') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'lois';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-instagram-circle:before {
+	content: "\e602";
+}
+
+.icon-twitter-circle:before {
+	content: "\e603";
+}
+
+.icon-lois-slashes:before {
+	content: "\e601";
+}
+
+.icon-ellipse:before {
+	content: "\e600";
+}
+
+.icon-envelope-o:before {
+	content: "\f003";
+}
+
+.icon-home:before {
+	content: "\f015";
+}
+
+.icon-arrow-down:before {
+	content: "\f063";
+}
+
+.icon-chevron-down:before {
+	content: "\f078";
+}
+
+.icon-twitter-square:before {
+	content: "\f081";
+}
+
+.icon-facebook-square:before {
+	content: "\f082";
+}
+
+.icon-camera-retro:before {
+	content: "\f083";
+}
+
+.icon-twitter:before {
+	content: "\f099";
+}
+
+.icon-facebook:before {
+	content: "\f09a";
+}
+
+.icon-angle-double-down:before {
+	content: "\f103";
+}
+
+.icon-instagram:before {
+	content: "\f16d";
+}
+
+html {
+	font-family: @heiti;
+	color: @darkgrey;
+
+	body {
+
+		margin: 0;
+
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+.avoid-wrap {
+	display: inline-block;
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+	and (max-width : 320px) {
+
+	.hide-for-mobile-portrait {
+		display: none;
+	}
+}
