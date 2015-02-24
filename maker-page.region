@@ -36,19 +36,19 @@
 				<div class="icon-section">
 					<div class="maker-icon">
 						<div class="avatar-container">
-							<div class="avatar" style="background-color: rgba(0, 0, 0, 0);"><squarespace:block-field id="maker-avatar" columns="1" lock-layout="true"/></div>
+							<div class="avatar" style="background-color: rgba(0, 0, 0, 0);"><squarespace:block-field id="maker-avatar" columns="1"/></div>
 						</div>
-						<div class="name"><squarespace:block-field id="maker-name" columns="1" lock-layout="true"/></div>
+						<div class="name"><squarespace:block-field id="maker-name" columns="1"/></div>
 					</div>
 				</div>
 
 				<div class="video-section">
-					<squarespace:block-field id="maker-video" columns="1" lock-layout="true"/>
+					<squarespace:block-field id="maker-video" columns="1"/>
 				</div>
 
 				<div class="blurb-section">
 					<p>
-						<squarespace:block-field id="maker-details" columns="1" lock-layout="true"/>
+						<squarespace:block-field id="maker-details" columns="1"/>
 					</p>
 				</div>
 			</main>
