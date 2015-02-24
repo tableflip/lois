@@ -169,6 +169,11 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 
+	&.mini-page {
+		height: calc(100vh - @top-menu-height);
+		background-position: center top;
+	}
+
 	.splash-social {
 		position: absolute;
 		display: table;
