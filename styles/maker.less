@@ -1,0 +1,65 @@
+/*****************************************************************************/
+/* Maker: Style */
+/*****************************************************************************/
+@grid-width: 1170px;
+@blurb-color: #979797;
+
+.container {
+	width: 100%;
+	max-width: @grid-width;
+	text-align: center;
+
+	&.top-space {
+		margin-top: 6vmax;
+	}
+}
+
+.icon-section {
+
+	display: inline-block;
+	width: 25%;
+	vertical-align: top;
+	min-width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+
+	.maker-icon {
+		max-width: @grid-width * 0.2;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
+
+.video-section {
+
+	display: inline-block;
+	width: 70%;
+	min-width: 300px;
+	text-align: center;
+
+	video {
+		max-width: 100%;
+	}
+
+}
+
+.blurb-section {
+
+	display: block;
+	text-align: left;
+	margin-top: 3vmax;
+	color: @blurb-color;
+	font-size: 2.5vmax;
+
+	.image {
+		width: @grid-width * 0.55;
+		max-width: 80%;
+		margin: 4vmax;
+
+		&.one {
+			float: left;
+		}
+	}
+
+}
