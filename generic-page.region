@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+		{squarespace-headers}
+	</head>
+	<body class="{squarespace.page-classes}" id="{squarespace.page-id}">
+
+		<div class="splash-scene">
+		
+			<div class="top-section">
+
+				<div class="top-spacer">
+				</div>
+
+				<div class="top-menu ">
+					<div class="slashes"><i class="icon-lois-slashes"></i></div>
+
+					<div class="menu-items">
+						<div class="left item"><a href="">shop</a></div>
+						<div class="right item"><a href="/makers">makers</a></div>
+					</div>
+
+					<a href="/">
+						<div class="centered-button white">
+							<div class="button-text">L O I S</div>
+						</div>
+					</a>
+
+				</div>
+
+			</div>
+
+			<div class="main-section">
+				{squarespace.main-content}
+				<squarespace:block-field id="footerBlock" columns="12" label="Footer Content" />
+			</div>
+
+		</div>
+
+	<squarespace:script src="site.js" combo="false" />
+
+	{.if template.mobileStylesEnabled}{.or}
+	  <script>
+	    Y.use('node', function() {
+	      Y.on('domready', function() {
+	        var move;
+	        Y.all('.subnav a').each(function(a) {
+	          a.on('touchstart', function() {
+	            move = false;
+	          });
+	          a.on('touchmove', function() {
+	            move = true;
+	          });
+	          a.on('touchend', function() {
+	            if (move === false) {
+	              window.location = a.getAttribute('href');
+	            }
+	          });
+	        });
+	      });
+	    });
+	  </script>
+	{.end}
+
+	</body>
+</html>
