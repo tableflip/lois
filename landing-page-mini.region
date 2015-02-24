@@ -8,7 +8,7 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.15.1/TweenMax.min.js"></script>
 		<squarespace:script src="jquery.scrollmagic.min.js" combo="false" />
-		<squarespace:script src="homepage-anim.js" combo="false" />
+		<squarespace:script src="mini-homepage-anim.js" combo="false" />
 	</head>
 	<body class="{squarespace.page-classes}" id="{squarespace.page-id}">
 
@@ -18,8 +18,7 @@
 
 				<div class="top-spacer collapsible">
 					<div class="lois-blurb">
-						championing London <br class="hide-for-mobile-portrait">
-						design talent <br class="hide-for-mobile-portrait">
+						championing London design talent<br class="hide-for-mobile-portrait">
 						in our independent <br class="hide-for-mobile-portrait">
 						online shop
 					</div>
@@ -33,9 +32,11 @@
 						<div class="right item"><a href="/makers">makers</a></div>
 					</div>
 
-					<div class="centered-button white">
-						<div class="button-text">L O I S</div>
-					</div>
+					<a href="/">
+						<div class="centered-button white">
+							<div class="button-text">L O I S</div>
+						</div>
+					</a>
 
 				</div>
 
