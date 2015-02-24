@@ -1,0 +1,10 @@
+<div class="makers-grid">
+  {.repeated section items}
+    <div class="maker-icon">
+      <div class="avatar-container">
+        <div class="avatar" style="background-image: url('{fullUrl}?format=300w')"></div>
+      </div>
+      <div class="name">{title}</div>
+    </div>
+  {.end}
+</div>

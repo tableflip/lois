@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+	<body>
+		<div class="top-section">
+
+			<div class="top-spacer collapsible">
+				<div class="lois-blurb">
+					independent shop selling a <br class="hide-for-mobile-portrait">
+					range of things that are <br class="hide-for-mobile-portrait">
+					handmade by designer-makers <br class="hide-for-mobile-portrait">
+					working in the UK.
+				</div>
+			</div>
+
+			<div class="top-menu collapsible">
+				<div class="slashes"><i class="icon-lois-slashes"></i></div>
+
+				<div class="menu-items">
+					<div class="left item">shop</div>
+					<div class="right item">makers</div>
+				</div>
+
+				<div class="centered-button white">
+					<div class="button-text">L O I S</div>
+				</div>
+
+			</div>
+
+		</div>
+	</body>
+
+</html>

@@ -42,61 +42,12 @@
 
 			<div class="main-section">
 
-				<div class="splash-image" style="background-image: url('assets/images/landing-page/homepage_header_image.jpg');"></div>
+				<div class="splash-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url('assets/images/landing-page/homepage_header_image.jpg');">
 
-				<div class="splash-button"><div class="centered-button yellow"><div class="button-text">Shop</div></div></div>
-
-				<div class="splash-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url('assets/images/landing-page/Laurie hands.jpg');">
-					
 					<div class="splash-social full-height">
 						<div class="social-content">
-							<div class="header">shop the collection</div>
+							<div class="header">launching 30 / 3 / 2015</div>
 						</div>
-					</div>
-
-				</div>
-
-				<div class="splash-button"><a class="centered-button yellow" href={{pathFor route='makers'}}><div class="button-text">Made</div></a></div>
-
-				<div class="splash-image" style="background-image: url('assets/images/landing-page/homepage_made_section.jpg');">
-					
-					<div class="splash-social full-height">
-						<div class="social-content">
-							<div class="header">
-								watch the films
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-				<div class="splash-button"><div class="centered-button yellow"><div class="button-text">Fun</div></div></div>
-
-				<div class="splash-image" style="background-image: url('assets/images/landing-page/homepage_fun_section.jpg');">
-					
-					<div class="splash-social">
-						<div class="social-content">
-							<div class="header">get involved</div>
-							<div class="subheader">join our mailing list</div>
-							<div class="social-icons">
-								<i class="icon-twitter-circle"></i>
-								<i class="icon-instagram-circle"></i>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-				<div class="splash-legal">
-						
-					<div class="item left">
-						<div>Please read our disclaimer</div>
-						<div>All of this is massively copyrighted</div>
-						<div>Please don't break the law in any other capacity either</div>
-					</div>
-
-					<div class="item right">
-						<div>Scroll up, the bit above is much more interesting</div>
 					</div>
 
 				</div>
@@ -104,8 +55,6 @@
 			</div>
 
 		</div>
-
-		<div class="down-arrow"><i class="icon-arrow-down" style="opacity: 0;"></i></div>
 
 	{.if template.mobileStylesEnabled}{.or}
 	  <script>
