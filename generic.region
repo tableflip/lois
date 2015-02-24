@@ -22,9 +22,11 @@
 						<div class="right item"><a href="/makers">makers</a></div>
 					</div>
 
-					<div class="centered-button white">
-						<div class="button-text">L O I S</div>
-					</div>
+					<a href="/">
+						<div class="centered-button white">
+							<div class="button-text">L O I S</div>
+						</div>
+					</a>
 
 				</div>
 
