@@ -1,7 +1,6 @@
 $(document).ready(function() {
 	
-	var controller = new ScrollMagic(),
-		vw = $(window).width() / 100,
+	var vw = $(window).width() / 100,
 		vh = $(window).height() / 100,
 		vmax = Math.max(vw, vh),
 		topSectionFactor = (vh > vw && vw <= 3.2) ? 21.5 : 21.5;
@@ -13,6 +12,8 @@ $(document).ready(function() {
     tl.add( TweenLite.to('.splash-image.mini-page', 1, {height: (100 * vh) - (topSectionFactor * vmax)}), '-=1' );
     tl.add( TweenLite.to('.lois-blurb', 1, {opacity: 1}) );
   
-    setTimeout.bind(window, tl.play.bind(tl), 500);
+    setTimeout(function() {
+    	tl.play()
+    }, 500);
 
 });
