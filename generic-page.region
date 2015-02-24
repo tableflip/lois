@@ -32,14 +32,15 @@
 
 			</div>
 
-			<div class="main-section">
+		<main id="main" role="main" class="main-section {.section item}{.main-image?}has-img{.end}{.or}{.section collection}{.section mainImage}has-img{.end}{.end}{.end}">
+			<div class="wrapper" data-content-field="main-content">
 				{squarespace.main-content}
-				<squarespace:block-field id="footerBlock" columns="12" label="Footer Content" />
 			</div>
+		</main>
 
 		</div>
 
-	<squarespace:script src="site.js" combo="false" />
+	<squarespace:script src="site.js" combo="true" />
 
 	{.if template.mobileStylesEnabled}{.or}
 	  <script>
@@ -64,5 +65,6 @@
 	  </script>
 	{.end}
 
+	{squarespace-footers}
 	</body>
 </html>
