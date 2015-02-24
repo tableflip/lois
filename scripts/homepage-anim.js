@@ -10,7 +10,7 @@ $(document).ready(function() {
         vw = $(window).width() / 100,
         vh = $(window).height() / 100,
         vmax = Math.max(vw, vh),
-        topSectionFactor = (vh > vw && vw <= 3.2) ? 35 : 30,
+        topSectionFactor = (vh > vw && vw <= 3.2) ? 21.5 : 21.5,
         tl = new TimelineLite({
             paused: true,
             onComplete: function() {
