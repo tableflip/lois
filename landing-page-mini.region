@@ -29,8 +29,8 @@
 					<div class="slashes"><i class="icon-lois-slashes"></i></div>
 
 					<div class="menu-items">
-						<div class="left item">shop</div>
-						<div class="right item">makers</div>
+						<div class="left item"><a href="">shop</a></div>
+						<div class="right item"><a href="/makers">makers</a></div>
 					</div>
 
 					<div class="centered-button white">
