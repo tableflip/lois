@@ -13,6 +13,6 @@ $(document).ready(function() {
     tl.add( TweenLite.to('.splash-image.mini-page', 1, {height: (100 * vh) - (topSectionFactor * vmax)}), '-=1' );
     tl.add( TweenLite.to('.lois-blurb', 1, {opacity: 1}) );
   
-    setTimeout.bind(Meteor, tl.play.bind(tl), 500);
+    setTimeout.bind(window, tl.play.bind(tl), 500);
 
 });
