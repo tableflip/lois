@@ -6,6 +6,8 @@ $(document).ready(function() {
 		topSectionFactor = (vh > vw && vw <= 4) ? 30.5 : 21.5;
         tl = new TimelineLite({paused: true});
 
+		console.log(vw, vh, vmax);
+
 		$('html').css('font-size', vmax + 'px');
     $('body').addClass('no-scroll');
 
