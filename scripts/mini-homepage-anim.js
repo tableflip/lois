@@ -1,12 +1,10 @@
-$(document).ready(function() {
+$(window).load(function() {
 
 	var vw = $(window).width() / 100,
 		vh = $(window).height() / 100,
 		vmax = Math.max(vw, vh),
 		topSectionFactor = (vh > vw && vw <= 4) ? 30.5 : 21.5;
         tl = new TimelineLite({paused: true});
-
-		console.log(vw, vh, vmax);
 
 		$('html').css('font-size', vmax + 'px');
     $('body').addClass('no-scroll');
@@ -15,11 +13,9 @@ $(document).ready(function() {
     tl.add( TweenLite.to('.splash-image.mini-page', 1, {height: (100 * vh) - (topSectionFactor * vmax)}), '-=1' );
     tl.add( TweenLite.to('.lois-blurb', 1, {opacity: 1}) );
 
-    $(document).ready(function() {
-			$('.splash-scene').removeClass('invisible');
-			setTimeout(function() {
-	    	tl.play();
-	    }, 500);
-		});
+		$('.splash-scene').removeClass('invisible');
+		setTimeout(function() {
+    	tl.play();
+    }, 500);
 
 });
