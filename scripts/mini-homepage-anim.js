@@ -22,8 +22,6 @@ $(window).load(function() {
 
 	}
 
-	if (jQuery.browser.safari && document.readyState != "complete") {
-		setTimeout(init, 100);
-	} else init();
+	setTimeout(init, 100);
 
 });
