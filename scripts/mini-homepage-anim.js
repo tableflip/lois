@@ -6,7 +6,7 @@ $(document).ready(function() {
 		topSectionFactor = (vh > vw && vw <= 4) ? 30.5 : 21.5;
         tl = new TimelineLite({paused: true});
 
-		$('html').css('font-size', vmax);
+		$('html').css('font-size', vmax + 'px');
     $('body').addClass('no-scroll');
 
     tl.add( TweenLite.to('.top-spacer', 2, {height: topSectionFactor * vmax}) );
