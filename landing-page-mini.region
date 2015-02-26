@@ -46,7 +46,7 @@
 
 			<div class="main-section">
 
-				<div class="splash-image mini-page" style="background-image: url('images/homepage_header_image.jpg'); background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url('assets/images/landing-page/homepage_header_image.jpg');">
+				<div class="splash-image mini-page" style="background-image: url('assets/images/landing-page/homepage_header_image.jpg'); background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url('assets/images/landing-page/homepage_header_image.jpg');">
 
 					<div class="splash-social full-height">
 						<div class="social-content">
