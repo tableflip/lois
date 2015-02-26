@@ -62,9 +62,12 @@ $(document).ready(function() {
         .setTween(TweenLite.to('.lois-blurb', 1, {height: 0}))
         .addTo(controller).on('');
   
-    setTimeout(function() {
-        controller.scrollTo(0);
-        $('body').addClass('prevent-scroll');
+    $(document).ready(function() {
+      controller.scrollTo(0);
+      $('body').addClass('prevent-scroll');
+      $('.splash-scene').removeClass('invisible');
+      setTimeout(function() {
         tl.play();
-    }, 200);
+      }, 500);
+    });
 });

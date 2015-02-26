@@ -8,7 +8,7 @@
 	<body class="{squarespace.page-classes}" id="{squarespace.page-id}">
 
 		<div class="splash-scene">
-		
+
 			<div class="top-section">
 
 				<div class="top-spacer">
@@ -22,11 +22,13 @@
 						<div class="right item"><a href="/makers">makers</a></div>
 					</div>
 
-					<a href="/">
-						<div class="centered-button white">
-							<div class="button-text">L O I S</div>
-						</div>
-					</a>
+					<div class="surround">
+						<a href="/">
+							<div class="centered-button white">
+								<div class="button-text">L O I S</div>
+							</div>
+						</a>
+					</div>
 
 				</div>
 

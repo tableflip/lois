@@ -31,9 +31,9 @@ body {
 	text-align: center;
 }
 
-@top-menu-height: 4.6vmax;
-@lois-button-size: 6.7vmax;
-@lois-button-border-width: 0.3vmax;
+@top-menu-height: 4.6rem;
+@lois-button-size: 6.7rem;
+@lois-button-border-width: 0.3rem;
 
 .top-section {
 
@@ -45,14 +45,14 @@ body {
 		z-index: 2;
 
 		&.collapsible {
-			height: 18vmax;
+			height: 18rem;
 
 			.lois-blurb {
-				padding: 3.6vmax;
-				font-size: 3.5vmax;
-				line-height: 5.8vmax;
-				word-spacing: 0.5vmax;
-				letter-spacing: 0.08vmax;
+				padding: 3.6rem;
+				font-size: 3.5rem;
+				line-height: 5.8rem;
+				word-spacing: 0.5rem;
+				letter-spacing: 0.08rem;
 				.opacity(0);
 			}
 		}
@@ -73,7 +73,7 @@ body {
 			table-layout: fixed;
 			width: 100%;
 			height: 100%;
-			font-size: 2.3vmax;
+			font-size: 2.3rem;
 
 			.item {
 				display: table-cell;
@@ -121,25 +121,28 @@ body {
 
 			.centered-button {
 				margin-top: 0;
-				width: 19.6vmax;
-				height: 19.6vmax;
+				width: 19.6rem;
+				height: 19.6rem;
 
 				.button-text {
-					font-size: 4.3vmax;
+					font-size: 4.3rem;
 				}
 			}
 		}
 	}
 }
+.surround {
+	position: absolute;
+	width: 100%;
+}
 
 .centered-button {
 	display: inline-block;
-	position: absolute;
 	text-align: center;
 	.border-radius(50%);
-	.transform(translate(-50%, -50%));
-	width: 23vmax;
-	height: 23vmax;
+	.transform(translateY(-50%));
+	width: 23rem;
+	height: 23rem;
 	z-index: 1;
 
 	&.yellow {
@@ -151,18 +154,18 @@ body {
 	}
 
 	.button-text {
-		font-size: 6.5vmax;		
+		font-size: 6.5rem;
 		margin-top: 50%;
 		.transform(translateY(-50%));
 	}
 
 	&.white {
 		background-color: @white;
-		border: 0.3vmax solid @darkgrey;
+		border: 0.3rem solid @darkgrey;
 
 		.button-text {
 			color: @black;
-		}			
+		}
 	}
 }
 
@@ -175,7 +178,7 @@ body {
 	background-position: center;
 
 	&.mini-page {
-		height: calc(100vh - 21.5vmax);
+		height: calc(100vh - 21.5rem);
 		background-position: center top;
 	}
 
@@ -195,27 +198,27 @@ body {
 			display: table-cell;
 			text-align: center;
 			vertical-align: middle;
-			line-height: 6vmax;
+			line-height: 6rem;
 
 			.header {
-				font-size: 5.2vmax;
+				font-size: 5.2rem;
 				&.launching {
-					font-size: 3.5vmax;
-					padding-left: 3.6vmax;
-					line-height: 5.8vmax;
-					padding-top: 3.6vmax;
+					font-size: 3.5rem;
+					padding-left: 3.6rem;
+					line-height: 5.8rem;
+					padding-top: 3.6rem;
 				}
 			}
 
 			.subheader {
-				font-size: 3.5vmax;
+				font-size: 3.5rem;
 			}
 
 			.social-icons {
-				font-size: 6.8vmax;
+				font-size: 6.8rem;
 				i {
-					margin-left: 1vmax;
-					margin-right: 1vmax;
+					margin-left: 1rem;
+					margin-right: 1rem;
 				}
 			}
 		}
@@ -223,10 +226,10 @@ body {
 }
 
 .splash-legal {
-	padding: 1.5vmax;
+	padding: 1.5rem;
 	color: @midgrey;
-	font-size: 1vmax;
-	line-height: 3vmax;
+	font-size: 1rem;
+	line-height: 3rem;
 
 	.item.left {
 		float: left;
@@ -239,19 +242,19 @@ body {
 .down-arrow {
 	position: fixed;
 	width: 100%;
-	bottom: 4vmax;
+	bottom: 4rem;
 	display: inline-block;
 	text-align: center;
 	z-index: 2;
 	height: 0;
 
 	i {
-		font-size: 3vmax;
+		font-size: 3rem;
 		color: rgba(0, 0, 0, 0.3);
 	}
 }
 
-@media only screen 
+@media only screen
 	and (max-width : 320px) {
 
 	.splash-image {

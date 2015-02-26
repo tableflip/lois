@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	
+
 	var vw = $(window).width() / 100,
 		vh = $(window).height() / 100,
 		vmax = Math.max(vw, vh),
@@ -11,9 +11,12 @@ $(document).ready(function() {
     tl.add( TweenLite.to('.top-spacer', 2, {height: topSectionFactor * vmax}) );
     tl.add( TweenLite.to('.splash-image.mini-page', 1, {height: (100 * vh) - (topSectionFactor * vmax)}), '-=1' );
     tl.add( TweenLite.to('.lois-blurb', 1, {opacity: 1}) );
-  
-    setTimeout(function() {
-    	tl.play()
-    }, 500);
+
+    $(document).ready(function() {
+			$('.splash-scene').removeClass('invisible');
+			setTimeout(function() {
+	    	tl.play();
+	    }, 500);
+		});
 
 });
