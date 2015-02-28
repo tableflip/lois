@@ -49,7 +49,7 @@ $(document).ready(function() {
         .setTween(TweenLite.to('.top-menu', 1, {height: TOP_MENU_HEIGHT * vmax}))
         .addTo(controller);
     new ScrollScene({offset: 200, duration: 800})
-        .setTween(TweenLite.to('.top-menu .centered-button', 1, {top: ((LOIS_BUTTON_SIZE * 0.5) + LOIS_BUTTON_BORDER) * vmax}))
+        .setTween(TweenLite.to('.top-menu .centered-button', 1, {y: ((LOIS_BUTTON_SIZE * 0.5) + LOIS_BUTTON_BORDER) * vmax}))
         .addTo(controller);
 
     new ScrollScene({offset: 1000, duration: 600})
@@ -61,7 +61,7 @@ $(document).ready(function() {
     new ScrollScene({offset: 1200, duration: 400})
         .setTween(TweenLite.to('.lois-blurb', 1, {height: 0}))
         .addTo(controller).on('');
-  
+
     $(document).ready(function() {
       controller.scrollTo(0);
       $('body').addClass('prevent-scroll');
