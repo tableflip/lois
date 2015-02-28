@@ -4,7 +4,7 @@
       <div class="avatar-container">
         <a href="http://www.lois.me.uk/maker-page/{title|slugify}" class="avatar" style="background-image: url('{fullUrl}?format=300w')"></a>
       </div>
-      <a href="http://www.lois.me.uk/maker-page/{title|slugify}" class="name">{title}</a>
+      <div class="name"><a href="http://www.lois.me.uk/maker-page/{title|slugify}">{title}</a></div>
     </div>
   {.end}
 </div>
