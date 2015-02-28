@@ -50,7 +50,7 @@
 
 				<div class="blurb-section">
 					<p>
-						<squarespace:block-field id="maker-details" columns="1"/>
+						<squarespace:block-field id="maker-details" columns="12"/>
 					</p>
 				</div>
 			</main>
