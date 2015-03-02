@@ -38,11 +38,11 @@
 
 				<div class="products-grid">
 
-				  <div class="big box"><a class="category-container"><div class="category"><squarespace:block-field id="LOIS-exclusives-pic" columns="1"/></div><div class="text">L&nbsp;O&nbsp;I&nbsp;S exclusives</div></a></div>
-				  <div class="small box"><a class="category-container"><div class="category"><squarespace:block-field id="accessories-pic" columns="1"/></div><div class="text">accessories</div></a></div>
-				  <div class="small box"><a class="category-container"><div class="category"><squarespace:block-field id="jewellery-pic" columns="1"/></div><div class="text">jewellery</div></a></div>
-				  <div class="small box"><a class="category-container"><div class="category"><squarespace:block-field id="print-pic" columns="1"/></div><div class="text">print</div></a></div>
-				  <div class="small box"><a class="category-container"><div class="category"><squarespace:block-field id="home-pic" columns="1"/></div><div class="text">home</div></a></div>
+				  <div class="big box"><a class="category-container"><squarespace:block-field id="LOIS-exclusives-pic" columns="1"/><div class="category"></div><div class="text">L&nbsp;O&nbsp;I&nbsp;S exclusives</div></a></div>
+				  <div class="small box"><a class="category-container"><squarespace:block-field id="accessories-pic" columns="1"/><div class="category"></div><div class="text">accessories</div></a></div>
+				  <div class="small box"><a class="category-container"><squarespace:block-field id="jewellery-pic" columns="1"/><div class="category"></div><div class="text">jewellery</div></a></div>
+				  <div class="small box"><a class="category-container"><squarespace:block-field id="print-pic" columns="1"/><div class="category"></div><div class="text">print</div></a></div>
+				  <div class="small box"><a class="category-container"><squarespace:block-field id="home-pic" columns="1"/><div class="category"></div><div class="text">home</div></a></div>
 
 				</div>
 
