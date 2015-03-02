@@ -5,7 +5,6 @@ $(document).ready(function() {
         TOP_MENU_HEIGHT = 4.6;
 
     var controller = new ScrollMagic(),
-        controller2 = new ScrollMagic(),
         // topSectionPin,
         vw = $(window).width() / 100,
         vh = $(window).height() / 100,
