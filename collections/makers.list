@@ -2,7 +2,7 @@
   {.repeated section items}
     <div class="maker-icon">
       <div class="avatar-container">
-        <a href="http://www.lois.me.uk/maker-page/{title|slugify}" class="avatar" style="background-image: url('{fullUrl}?format=300w')"></a>
+        <a href="{fullUrl}" class="avatar" style="background-image: url('{assetUrl}?format=300w')"></a>
       </div>
       <div class="name"><a href="http://www.lois.me.uk/maker-page/{title|slugify}">{title}</a></div>
     </div>
