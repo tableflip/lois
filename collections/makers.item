@@ -2,12 +2,12 @@
 
 	<main id="main" role="main" class="container top-space main-section {.section item}{.main-image?}has-img{.end}{.or}{.section collection}{.section mainImage}has-img{.end}{.end}{.end}">
 		<div class="icon-section">
-			<div class="maker-icon">
+			<a class="maker-icon" href="{item.fullUrl}">
 				<div class="avatar-container">
-					<div class="avatar" style="background-color: rgba(0, 0, 0, 0);"><img {@|image-meta} /></div>
+					<div class="avatar" style="background-color: rgba(0, 0, 0, 0);"><img src="{item.assetUrl}?format=300w" /></div>
 				</div>
 				<div class="name">{item.title}</div>
-			</div>
+			</a>
 		</div>
 
 		<div class="video-section">
