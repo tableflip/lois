@@ -4,7 +4,7 @@
 		<div class="icon-section">
 			<div class="maker-icon">
 				<div class="avatar-container">
-					<div class="avatar" style="background-color: rgba(0, 0, 0, 0);"><img src="{item.assetUrl}?format=300w" /></div>
+					<div class="avatar" style="background-image: {item.assetUrl}?format=300w" /></div>
 				</div>
 				<div class="name">{item.title}</div>
 			</div>
