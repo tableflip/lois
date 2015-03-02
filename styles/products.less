@@ -3,6 +3,7 @@
 /*****************************************************************************/
 
 @grid-width: 1090px;
+@border-size: 1rem;
 
 .products-grid {
 
@@ -18,11 +19,9 @@
 		float: left;
 		width: 33%;
 		box-sizing: border-box;
-		overflow: hidden;
 		position: relative;
 
 		.category-container {
-			margin: 11%;
 			width: 78%;
 			position: static;
 			background-color: @semilightgrey;
@@ -34,11 +33,12 @@
 
 			.category {
 				position: absolute;
-				top: 0;
-				left: 0;
-				bottom: 0;
-				right: 0;
+				top: @border-size;
+				left: @border-size;
+				bottom: @border-size;
+				right: @border-size;
 				background-size: cover;
+				overflow: hidden;
 			}
 			.text {
 				position: absolute;
@@ -69,7 +69,7 @@
 
 		&.big {
 			.category-container:before{
-				padding-top: 227.5%;
+				padding-top: 200%;
 			}
 			@media @tablet {
 				width: 50%;
