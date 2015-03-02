@@ -1,47 +1,22 @@
 <div class="splash-scene">
 
-	<div class="top-section">
-
-		<div class="top-spacer">
-		</div>
-
-		<div class="top-menu ">
-			<div class="slashes"><i class="icon-lois-slashes"></i></div>
-
-			<div class="menu-items">
-				<div class="left item"><a href="">shop</a></div>
-				<div class="right item"><a href="/makers">makers</a></div>
-			</div>
-
-			<div class="surround">
-				<a href="/">
-					<div class="centered-button white">
-						<div class="button-text">L O I S</div>
-					</div>
-				</a>
-			</div>
-
-		</div>
-
-	</div>
-
 	<main id="main" role="main" class="container top-space main-section {.section item}{.main-image?}has-img{.end}{.or}{.section collection}{.section mainImage}has-img{.end}{.end}{.end}">
 		<div class="icon-section">
 			<div class="maker-icon">
 				<div class="avatar-container">
-					<div class="avatar" style="background-color: rgba(0, 0, 0, 0);"><squarespace:block-field id="maker-avatar" columns="1"/></div>
+					<div class="avatar" style="background-color: rgba(0, 0, 0, 0);"><img {@|image-meta} /></div>
 				</div>
-				<div class="name"><squarespace:block-field id="maker-name" columns="1"/></div>
+				<div class="name">{item.title}</div>
 			</div>
 		</div>
 
 		<div class="video-section">
-			<squarespace:block-field id="maker-video" columns="1"/>
+			<squarespace:block-field id="{item.title|slugify}-video" columns="1"/>
 		</div>
 
 		<div class="blurb-section">
 			<p>
-				<squarespace:block-field id="maker-details" columns="12"/>
+				<squarespace:block-field id="{item.title|slugify}-details" columns="12"/>
 			</p>
 		</div>
 	</main>
