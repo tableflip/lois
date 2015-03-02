@@ -35,7 +35,7 @@
 			</div>
 
 		<main id="main" role="main" class="main-section {.section item}{.main-image?}has-img{.end}{.or}{.section collection}{.section mainImage}has-img{.end}{.end}{.end}">
-			<div class="container wrapper" data-content-field="main-content">
+			<div class="container top-space wrapper" data-content-field="main-content">
 				{squarespace.main-content}
 			</div>
 		</main>
