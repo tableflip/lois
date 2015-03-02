@@ -119,6 +119,17 @@
 		&:last-child {
 			padding-bottom: 0;
 		}
+
+		@media @mobile {
+			.intrinsic {
+				max-height: 50rem;
+				overflow-y: hidden;
+
+				.image-caption p {
+					font-size: 3.5rem;
+				}
+			}
+		}
 	}
 
 	.image-block {
