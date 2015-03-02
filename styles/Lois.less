@@ -13,6 +13,9 @@
 @clear: rgba(0, 0, 0, 0);
 @tint: rgba(0, 0, 0, 0.6);
 @heiti: 'STHeitiSC-Medium', sans-serif;
+@grid-width: 1170px;
+
+@container-width: 1090px;
 
 @font-face {
 	font-family:'STHeitiSC-Medium';
@@ -131,6 +134,18 @@ html {
 
 .avoid-wrap {
 	display: inline-block;
+}
+
+.container {
+	width: 100%;
+	max-width: @grid-width;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+	&.top-space {
+		margin-top: 6rem;
+	}
 }
 
 /* Smartphones (portrait) ----------- */
