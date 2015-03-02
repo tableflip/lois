@@ -1,0 +1,104 @@
+/*****************************************************************************/
+/* Products: Style */
+/*****************************************************************************/
+@import "../../../flexbox-prefixer";
+@import "../../../responsive";
+@import "../../../Lois";
+
+@grid-width: 1090px;
+
+.products-grid {
+
+	width: 100%;
+	max-width: @grid-width;
+	margin-top: 3rem;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+
+	.box {
+		display: inline-block;
+		float: left;
+		width: 33%;
+		box-sizing: border-box;
+
+		.category-container {
+			margin: 11%;
+			width: 78%;
+			position: relative;
+			background-color: @semilightgrey;
+
+			&:before{
+				content: "";
+				display: block;
+			}
+
+			.category {
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				background-size: cover;
+			}
+			.text {
+				position: absolute;
+				bottom: 1.4rem;
+				right: 1.4rem;
+				max-width: 80%;
+				font-size: 2.08rem;
+				text-align: right;
+				text-align: -webkit-right;
+				color: @darkgrey;
+			}
+		}
+
+		@media @tablet {
+			width: 50%;
+		}
+		@media @mobile {
+			width: 100%;
+
+			.category-container {
+				margin: 5.5%;
+				width: 89%;
+				&:before {
+					padding-top: 44%;
+				}
+			}
+		}
+
+		&.big {
+			.category-container:before{
+				padding-top: 227.5%;
+			}
+			@media @tablet {
+				width: 50%;
+			}
+			@media @mobile {
+				width: 100%;
+
+				.category-container {
+					margin: 5.5%;
+					width: 89%;
+					&:before {
+						padding-top: 44%;
+					}
+				}
+			}
+		}
+
+		&.small {
+			.category-container:before{
+				padding-top: 100%;
+			}
+			@media @tablet {
+				width: 50%;
+			}
+			@media @mobile {
+				width: 50%;
+			}
+		}
+
+	}
+}

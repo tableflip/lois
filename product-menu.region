@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+		{squarespace-headers}
+	</head>
+	<body class="{squarespace.page-classes}" id="{squarespace.page-id}">
+
+		<div class="splash-scene">
+
+			<div class="top-section">
+
+				<div class="top-spacer">
+				</div>
+
+				<div class="top-menu ">
+					<div class="slashes"><i class="icon-lois-slashes"></i></div>
+
+					<div class="menu-items">
+						<div class="left item"><a href="">shop</a></div>
+						<div class="right item"><a href="/makers">makers</a></div>
+					</div>
+
+					<div class="surround">
+						<a href="/">
+							<div class="centered-button white">
+								<div class="button-text">L O I S</div>
+							</div>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+
+			<main id="main" role="main" class="container top-space main-section {.section item}{.main-image?}has-img{.end}{.or}{.section collection}{.section mainImage}has-img{.end}{.end}{.end}"><div class="top-section">
+
+				<div class="products-grid">
+
+				  <div class="big box"><a class="category-container"><div class="category"><squarespace:block-field id="LOIS-exclusives-pic" columns="1"/></div><div class="text">L&nbsp;O&nbsp;I&nbsp;S exclusives</div></a></div>
+				  <div class="small box"><a class="category-container"><div class="category"><squarespace:block-field id="accessories-pic" columns="1"/></div><div class="text">accessories</div></a></div>
+				  <div class="small box"><a class="category-container"><div class="category"><squarespace:block-field id="jewellery-pic" columns="1"/></div><div class="text">jewellery</div></a></div>
+				  <div class="small box"><a class="category-container"><div class="category"><squarespace:block-field id="print-pic" columns="1"/></div><div class="text">print</div></a></div>
+				  <div class="small box"><a class="category-container"><div class="category"><squarespace:block-field id="home-pic" columns="1"/></div><div class="text">home</div></a></div>
+
+				</div>
+
+			</main>
+
+		</div>
+
+	<squarespace:script src="site.js" combo="true" />
+
+	{.if template.mobileStylesEnabled}{.or}
+		<script>
+			Y.use('node', function() {
+				Y.on('domready', function() {
+					var move;
+					Y.all('.subnav a').each(function(a) {
+						a.on('touchstart', function() {
+							move = false;
+						});
+						a.on('touchmove', function() {
+							move = true;
+						});
+						a.on('touchend', function() {
+							if (move === false) {
+								window.location = a.getAttribute('href');
+							}
+						});
+					});
+				});
+			});
+		</script>
+	{.end}
+
+	{squarespace-footers}
+	</body>
+</html>
