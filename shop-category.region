@@ -38,11 +38,23 @@
 
 				<div class="products-grid">
 
-				  <div class="big box"><a class="category-container"><div class="category"><squarespace:block-field id="LOIS-exclusives-pic" columns="12"/></div><div class="text">L&nbsp;O&nbsp;I&nbsp;S exclusives</div></a></div>
-				  <div class="small box"><a class="category-container"><div class="category"><squarespace:block-field id="accessories-pic" columns="12"/></div><div class="text">accessories</div></a></div>
-				  <div class="small box"><a class="category-container"><div class="category"><squarespace:block-field id="jewellerys-pic" columns="12"/></div><div class="text">jewellery</div></a></div>
-				  <div class="small box"><a class="category-container"><div class="category"><squarespace:block-field id="print-pic" columns="12"/></div><div class="text">print</div></a></div>
-				  <div class="small box"><a class="category-container"><div class="category"><squarespace:block-field id="homes-pic" columns="12"/></div><div class="text">home</div></a></div>
+					<squarespace:query collection="products" limit="3" tags="{title|slugify}">
+
+						{.repeated section items}
+							<div class="product"><a href="{fullUrl}"><img src="assetUrl" />{title}</a></div>
+						{.end}
+
+					</squarespace:query>
+
+					<h2 class="title-divider">{title}</h2>
+
+					<squarespace:query collection="products" tags="{title|slugify}">
+
+						{.repeated section items}
+							<div class="product index-{@index}"><a href="{fullUrl}"><img src="assetUrl" />{title}</a></div>
+						{.end}
+
+					</squarespace:query>
 
 				</div>
 
