@@ -41,7 +41,7 @@
 					<squarespace:query collection="products" limit="3" tags="{collection.title|slugify}">
 
 						{.repeated section items}
-							<div class="product"><a href="{fullUrl}"><img {@|image-meta} class="image" /></a><div class="title">{title}</div></div>
+							<div class="product"><a href="{fullUrl}"><img {@|image-meta} class="image" /><div class="title">{title}</div></a></div>
 						{.end}
 
 					</squarespace:query>
