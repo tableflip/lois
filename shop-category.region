@@ -38,7 +38,7 @@
 
 				<div class="products-grid">
 
-					<squarespace:query collection="products" limit="3" tags="{title|slugify}">
+					<squarespace:query collection="products" limit="3" tags="{collection.title|slugify}">
 
 						{.repeated section items}
 							<div class="product"><a href="{fullUrl}"><img src="assetUrl" />{title}</a></div>
@@ -46,15 +46,19 @@
 
 					</squarespace:query>
 
-					<h2 class="title-divider">{title}</h2>
+					<h2 class="title-divider">{collection.title}</h2>
 
-					<squarespace:query collection="products" tags="{title|slugify}">
+					<squarespace:query collection="products" tags="{collection.title|slugify}">
 
 						{.repeated section items}
 							<div class="product index-{@index}"><a href="{fullUrl}"><img src="assetUrl" />{title}</a></div>
 						{.end}
 
 					</squarespace:query>
+
+					<div class="slash-footer">
+						<i class="icon-lois-slashes"></i>
+					</div>
 
 				</div>
 
