@@ -1,8 +1,12 @@
 <div class="products-grid">
 
+	<squarespace:query collection="products" limit="3">
+
 		{.repeated section items}
 			<div class="product"><a href="{fullUrl}"><img {@|image-meta} class="image" /><div class="title">{title}</div></a></div>
 		{.end}
+
+	</squarespace:query>
 
 	<h2 class="title-divider">All Products</h2>
 
