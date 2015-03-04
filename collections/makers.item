@@ -20,10 +20,10 @@
 			</p>
 		</div>
 
-		<h2 class="title-divider">Made by {item.title}</h2>
-
 		<div class="products-grid">
 
+			<h2 class="title-divider">Made by {item.title}</h2>
+			
 			<squarespace:query collection="products" category="{item.title|slugify}">
 
 				{.repeated section items}
