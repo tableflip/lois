@@ -46,11 +46,13 @@
 
 			<div class="main-section">
 
-				<div class="splash-image" style="background-image: url('assets/images/landing-page/homepage_header_image.jpg');"></div>
+				<div class="splash-image"><squarespace:block-field id="header-image" columns="1"/></div>
 
 				<div class="splash-button"><div class="centered-button yellow"><div class="button-text">Shop</div></div></div>
 
-				<div class="splash-image laurie-hands-image-tint">
+				<div class="splash-image">
+
+					<squarespace:block-field id="shop-image" columns="1"/>
 
 					<div class="splash-social full-height">
 						<div class="social-content">
@@ -62,7 +64,9 @@
 
 				<div class="splash-button"><a class="centered-button yellow" href={{pathFor route='makers'}}><div class="button-text">Made</div></a></div>
 
-				<div class="splash-image" style="background-image: url('assets/images/landing-page/homepage_made_section.jpg');">
+				<div class="splash-image">
+
+					<squarespace:block-field id="made-image" columns="1"/>
 
 					<div class="splash-social full-height">
 						<div class="social-content">
@@ -76,7 +80,9 @@
 
 				<div class="splash-button"><div class="centered-button yellow"><div class="button-text">Fun</div></div></div>
 
-				<div class="splash-image" style="background-image: url('assets/images/landing-page/homepage_fun_section.jpg');">
+				<div class="splash-image">
+
+					<squarespace:block-field id="fun-image" columns="1"/>
 
 					<div class="splash-social">
 						<div class="social-content">
@@ -94,13 +100,11 @@
 				<div class="splash-legal">
 
 					<div class="item left">
-						<div>Please read our disclaimer</div>
-						<div>All of this is massively copyrighted</div>
-						<div>Please don't break the law in any other capacity either</div>
+						<squarespace:block-field id="left-info" columns="1"/>
 					</div>
 
 					<div class="item right">
-						<div>Scroll up, the bit above is much more interesting</div>
+						<squarespace:block-field id="right-info" columns="1"/>
 					</div>
 
 				</div>
