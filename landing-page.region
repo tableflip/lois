@@ -82,7 +82,7 @@
 
 				<div class="splash-image">
 
-					<div class="item left">
+					<div class="image-block">
 						<squarespace:block-field id="fun-image" columns="1" />
 					</div>
 
