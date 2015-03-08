@@ -46,13 +46,13 @@
 
 			<div class="main-section">
 
-				<div class="splash-image"><squarespace:block-field id="header-image" columns="12"/></div>
+				<div class="splash-image"><squarespace:block-field id="header-image" columns="12" /></div>
 
 				<div class="splash-button"><div class="centered-button yellow"><div class="button-text">Shop</div></div></div>
 
 				<div class="splash-image">
 
-					<squarespace:block-field id="shop-image" columns="12"/>
+					<squarespace:block-field id="shop-image" columns="12" />
 
 					<div class="splash-social full-height">
 						<div class="social-content">
@@ -66,7 +66,7 @@
 
 				<div class="splash-image">
 
-					<squarespace:block-field id="made-image" columns="12"/>
+					<squarespace:block-field id="made-image" columns="12" />
 
 					<div class="splash-social full-height">
 						<div class="social-content">
@@ -82,7 +82,7 @@
 
 				<div class="splash-image">
 
-					<squarespace:block-field id="fun-image" columns="12"/>
+					<squarespace:block-field id="fun-image" columns="12" />
 
 					<div class="splash-social">
 						<div class="social-content">
@@ -100,11 +100,11 @@
 				<div class="splash-legal">
 
 					<div class="item left">
-						<squarespace:block-field id="left-info" columns="1"/>
+						<squarespace:block-field id="left-info" columns="1" />
 					</div>
 
 					<div class="item right">
-						<squarespace:block-field id="right-info" columns="1"/>
+						<squarespace:block-field id="right-info" columns="1" />
 					</div>
 
 				</div>
