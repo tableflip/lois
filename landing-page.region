@@ -51,7 +51,7 @@
 					<div class="image-block">
 						<squarespace:block-field id="header-image" columns="1" />
 					</div>
-					
+
 				</div>
 
 				<div class="splash-button"><div class="centered-button yellow"><div class="button-text">Shop</div></div></div>
@@ -117,6 +117,11 @@
 
 					<div class="item right">
 						<squarespace:block-field id="right-info" columns="1" />
+					</div>
+
+					<div class="item centered">
+						<span class="section"></span><squarespace:block-field id="copyright-text" columns="1" /></span>
+						<span class="section"><a href="/faq">FAQ</a></span>
 					</div>
 
 				</div>
