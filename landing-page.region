@@ -120,7 +120,7 @@
 					</div>
 
 					<div class="item centered">
-						<span class="section"></span><squarespace:block-field id="copyright-text" columns="1" /></span>
+						<span class="section"><squarespace:block-field id="copyright-text" columns="1" /></span>
 						<span class="section"><a href="/faq">FAQ</a></span>
 					</div>
 
