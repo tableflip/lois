@@ -41,17 +41,17 @@
 					<squarespace:query collection="products" limit="3" tag="{collection.title|slugify}">
 
 						{.repeated section items}
-							<div class="product"><a href="{fullUrl}"><img {@|image-meta} class="image" /><div class="title">{title}</div></a></div>
+							<div class="product"><a href="{fullUrl}"><img {@|image-meta} class="image" /><div class="title">{title} {price}</div></a></div>
 						{.end}
 
 					</squarespace:query>
 
-					<h2 class="title-divider">{collection.title}</h2>
+					<h2 class="title-divider">{collection.navigationTitle}</h2>
 
-					<squarespace:query collection="products" tag="{collection.navigationTitle|slugify}">
+					<squarespace:query collection="products" tag="{collection.title|slugify}">
 
 						{.repeated section items}
-							<div class="product index-{@index}"><a href="{fullUrl}"><img {@|image-meta} class="image" /><div class="title">{title}</div></a></div>
+							<div class="product index-{@index}"><a href="{fullUrl}"><img {@|image-meta} class="image" /><div class="title">{title} {price}</div></a></div>
 						{.end}
 
 					</squarespace:query>

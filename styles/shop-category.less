@@ -1,3 +1,6 @@
+// tweak: { "type" : "value", "title" : "Product padding", "min" : "0rem", "max" : "5rem" }
+@product-padding: 2rem;
+
 .products-grid {
 
   width: 100%;
@@ -11,7 +14,7 @@
     width: 33%;
     float: left;
     text-align: center;
-    padding: 1rem;
+    padding: @product-padding;
     box-sizing: border-box;
 
     .image {
@@ -22,8 +25,15 @@
       position: absolute;
       width: 100%;
       left: 0;
-      bottom: 2rem;
+      bottom: calc(@product-padding + 1rem);
       text-align: center;
+      opacity: 0;
+    }
+
+    &:hover {
+      .title {
+        opacity: 100%;
+      }
     }
 
     a {
