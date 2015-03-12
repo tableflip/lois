@@ -1,3 +1,6 @@
+// tweak: { "type" : "value", "title" : "Product padding", "min" : "0rem", "max" : "5rem" }
+@product-padding: 2rem;
+
 .products-grid {
 
   width: 100%;
@@ -11,7 +14,7 @@
     width: 33%;
     float: left;
     text-align: center;
-    padding: 1rem;
+    padding: @product-padding;
     box-sizing: border-box;
 
     &:before{
@@ -32,8 +35,16 @@
       position: absolute;
       width: 100%;
       left: 0;
-      bottom: 2rem;
+      bottom: calc(@product-padding + 1rem);
       text-align: center;
+      opacity: 0;
+      .transition(opacity 0.5s)
+    }
+
+    &:hover {
+      .title {
+        opacity: 1;
+      }
     }
 
     a {
@@ -54,6 +65,7 @@
     text-align: center;
     margin-top: 5rem;
     margin-bottom: 5rem;
+    clear: both;
 
   }
 
@@ -63,6 +75,7 @@
     display: block;
     text-align: center;
     margin-top: 5rem;
+    clear: both;
 
   }
 

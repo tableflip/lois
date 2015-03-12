@@ -258,11 +258,23 @@ body {
 	font-size: 1rem;
 	line-height: 3rem;
 
-	.item.left {
-		float: left;
-	}
-	.item.right {
-		float: right;
+	.item {
+		&.left {
+			float: left;
+		}
+		&.right {
+			float: right;
+		}
+		&.centered {
+			display: block;
+			text-align: center;
+			clear: both;
+		}
+		.section {
+			padding: 1rem;
+			display: inline-block;
+			vertical-align: top;
+		}
 	}
 }
 
@@ -289,3 +301,14 @@ body {
 	}
 
 }
+
+// Uncomment this to enable you to add blocks to the background image holders on
+// the landing page.  SquareSpace doesn't link 100% width content blocks, so we
+// have to temporarily make them smaller whilst we adjust the content.
+
+// .image-block {
+// 	width: 80%;
+// 	margin-left: auto;
+// 	margin-right: auto;
+// 	display: block;
+// }
