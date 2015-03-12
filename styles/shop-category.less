@@ -9,6 +9,8 @@
 
   .product {
 
+    @double-padding: @product-padding * 2;
+
     display: inline-block;
     position: relative;
     width: 33%;
@@ -24,7 +26,6 @@
     }
 
     .image {
-      @double-padding: @product-padding * 2;
       position: absolute;
       top: @product-padding;
       left: @product-padding;
@@ -36,8 +37,8 @@
 
     .title {
       position: absolute;
-      width: 100%;
-      left: 0;
+      width: calc(100% - @{double-padding});
+      left: @product-padding;
       bottom: calc(@product-padding + 1rem);
       text-align: center;
       opacity: 0;
@@ -66,7 +67,7 @@
     font-weight: normal;
     display: block;
     text-align: center;
-    margin-top: 5rem;
+    padding-top: 5rem;
     margin-bottom: 5rem;
     clear: both;
 
@@ -77,7 +78,7 @@
     font-size: 12.5rem;
     display: block;
     text-align: center;
-    margin-top: 5rem;
+    padding-top: 5rem;
     clear: both;
 
   }
