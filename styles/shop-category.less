@@ -1,5 +1,5 @@
 // tweak: { "type" : "value", "title" : "Product padding", "min" : "0rem", "max" : "5rem" }
-@product-padding: 15%;
+@product-padding: 10%;
 
 .products-grid {
 
@@ -31,15 +31,15 @@
       left: @product-padding;
       bottom: @product-padding;
       right: @product-padding;
-      height: calc(100% - (2 * @product-padding));
-      width: calc(100% - (2 * @product-padding));
+      height: 100% - @double-padding;
       height: ~"calc(100% - @{double-padding})";
+      width: 100% - @double-padding;
       width: ~"calc(100% - @{double-padding})";
     }
 
     .title {
       position: absolute;
-      width: calc(100% - (2 * @product-padding));
+      width: 100% - @double-padding;
       width: ~"calc(100% - @{double-padding})";
       left: @product-padding;
       bottom: 20%;
