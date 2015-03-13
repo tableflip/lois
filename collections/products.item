@@ -1,41 +1,35 @@
-{.section item}
-	<div id="flowThumbnail">
-		{.section items}
-			{.section 0}
-				<img {@|image-meta} />
-			{.end}
+<div class="product-space">
+
+	<div class="left half">
+		{.section item}
+			<div class="product-image"><a href="{fullUrl}"><img {@|image-meta} class="image" /><div class="title">{title}</div></a></div>
 		{.end}
 	</div>
-	<div id="flowContent" class="loading" data-item-id="{id}">
-		<a href="{collection.fullUrl}" class="flow-back loading">{collection.title}</a>
 
-		{@|product-status}{.if title}<h1 class="product-title">{title}</h1>{.end}
-
-		{@|product-price}
-
-		<div class="product-excerpt">{.excerpt?}{excerpt}{.end}</div>
-
-		{.if body}<a href="#" id="flowBodyOpen"></a>{.end}
-
-		{@|product-checkout}
-		{@|social-button-inline}
-	</div>
-	<div id="flowItems">
-		<div id="flowScrollPrompt"></div>
-		{.repeated section items}
-			<article class="flow-item"/>
-				<img {@|image-meta} />
-			</article>
+	<div class="right half">
+		{.section item}
+			<div class="title">{title}</div>
+			<div class="price">{@|product-price}<div class="stock-{variants.qtyInStock}"></div></div>
+			<div class="description">{excerpt|html}</div>
+			<div class="status">{item|product-status}</div>
+			<div class="checkout">{@|product-checkout}</div>
 		{.end}
-	</div>
-	{.section body}
-		<div id="flowBody">
-			<a href="#" id="flowBodyClose"></a>
-			<div class="wrapper">
-				<h1>Additional Info</h1>
-				{@}
-			</div>
+
+		<div class="maker-section">
+		{.repeated section item.categories}
+			<squarespace:query collection="makers" limit="1" tag="{@}">
+				{.repeated section items}
+					<div class="maker-icon">
+			      <div class="avatar-container">
+			        <a href="{fullUrl}" class="avatar" style="background-image: url('{assetUrl}?format=300w')"></a>
+			      </div>
+			      <div class="name"><a href="http://www.lois.me.uk/maker-page/{title|slugify}">{title}</a></div>
+			    </div>
+				{.end}
+			</squarespace:query>
+		{.end}
 		</div>
-	{.end}
 
-{.end}
+	</div>
+
+</div>

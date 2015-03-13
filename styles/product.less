@@ -1,0 +1,55 @@
+.product-space {
+
+  @product-padding: 10%;
+  @double-padding: @product-padding * 2;
+
+  .half {
+    display: inline-block;
+    width: 50%;
+    margin: 0;
+    box-sizing: border-box;
+
+    .product-image {
+
+      &:before{
+        content: "";
+        display: block;
+        padding-top: 100%;
+      }
+
+      .image {
+        position: absolute;
+        top: @product-padding;
+        left: @product-padding;
+        bottom: @product-padding;
+        right: @product-padding;
+        height: 100% - @double-padding;
+        height: ~"calc(100% - @{double-padding})";
+        width: 100% - @double-padding;
+        width: ~"calc(100% - @{double-padding})";
+      }
+
+    }
+  }
+
+  .title {
+
+  }
+
+  .price {
+
+  }
+
+  .description {
+
+  }
+
+  .status {
+
+  }
+
+  .checkout {
+
+  }
+
+}
