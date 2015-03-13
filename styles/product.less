@@ -5,11 +5,20 @@
 
   .half {
     display: inline-block;
-    width: 50%;
     margin: 0;
     box-sizing: border-box;
+    vertical-align: text-top;
+
+    &.left {
+      width: 60%;
+    }
+    &.right {
+      width: 38%
+    }
 
     .product-image {
+
+      position: relative;
 
       &:before{
         content: "";
@@ -29,6 +38,10 @@
         width: ~"calc(100% - @{double-padding})";
       }
 
+    }
+
+    .maker-section {
+      width: 16.25rem;
     }
   }
 
