@@ -1,35 +1,43 @@
-<div class="product-space">
+<div class="splash-scene">
 
-	<div class="left half">
-		{.section item}
-			<div class="product-image"><a href="{fullUrl}"><img {@|image-meta} class="image" /><div class="title">{title}</div></a></div>
-		{.end}
-	</div>
+	<main id="main" role="main" class="container top-space main-section {.section item}{.main-image?}has-img{.end}{.or}{.section collection}{.section mainImage}has-img{.end}{.end}{.end}">
 
-	<div class="right half">
-		{.section item}
-			<div class="title">{title}</div>
-			<div class="price">{@|product-price}<div class="stock-{variants.qtyInStock}"></div></div>
-			<div class="description">{excerpt|html}</div>
-			<div class="status">{item|product-status}</div>
-			<div class="checkout">{@|product-checkout}</div>
-		{.end}
+		<div class="product-space">
 
-		<div class="maker-section">
-		{.repeated section item.categories}
-			<squarespace:query collection="makers" limit="1" tag="{@}">
-				{.repeated section items}
-					<div class="maker-icon">
-			      <div class="avatar-container">
-			        <a href="{fullUrl}" class="avatar" style="background-image: url('{assetUrl}?format=300w')"></a>
-			      </div>
-			      <div class="name"><a href="http://www.lois.me.uk/maker-page/{title|slugify}">{title}</a></div>
-			    </div>
+			<div class="left half">
+				{.section item}
+					<div class="product-image"><img {@|image-meta} class="image" /></div>
 				{.end}
-			</squarespace:query>
-		{.end}
+			</div>
+
+			<div class="right half">
+				{.section item}
+					<div class="title">{title}</div>
+					<div class="price">{@|product-price}<div class="stock-{variants.qtyInStock}"></div></div>
+					<div class="description">{excerpt|escape}</div>
+					<div class="status">{item|product-status}</div>
+					<div class="checkout">{@|product-checkout}</div>
+				{.end}
+
+				<div class="maker-section">
+				{.repeated section item.categories}
+					<squarespace:query collection="makers" limit="1" tag="{@}">
+						{.repeated section items}
+							<div class="maker-icon">
+					      <div class="avatar-container">
+					        <a href="{fullUrl}" class="avatar" style="background-image: url('{assetUrl}?format=300w')"></a>
+					      </div>
+					      <div class="name"><a href="http://www.lois.me.uk/maker-page/{title|slugify}">{title}</a></div>
+					    </div>
+						{.end}
+					</squarespace:query>
+				{.end}
+				</div>
+
+			</div>
+
 		</div>
 
-	</div>
+	</main>
 
 </div>
