@@ -22,7 +22,7 @@
 			      <div class="avatar-container">
 			        <a href="{fullUrl}" class="avatar" style="background-image: url('{assetUrl}?format=300w')"></a>
 			      </div>
-			      <div class="name"><a href="http://www.lois.me.uk/maker-page/{title|slugify}"><squarespace:block-field id="maker-role" columns="12"/> {title}</a></div>
+			      <div class="name"><squarespace:block-field id="maker-role" columns="1"/> {title}</div>
 			    </div>
 				{.end}
 			</squarespace:query>
