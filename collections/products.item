@@ -18,11 +18,11 @@
 		{.repeated section item.categories}
 			<squarespace:query collection="makers" limit="1" tag="{@}">
 				{.repeated section items}
-					<div class="maker-icon">
+					<div class="maker-icon flow">
 			      <div class="avatar-container">
 			        <a href="{fullUrl}" class="avatar" style="background-image: url('{assetUrl}?format=300w')"></a>
 			      </div>
-			      <div class="name"><squarespace:block-field id="maker-role" columns="1"/><span class="title">{title}</span></div>
+			      <div class="name"><squarespace:block-field id="maker-role" columns="1"/><span class="name-title">{title}</span></div>
 			    </div>
 				{.end}
 			</squarespace:query>
