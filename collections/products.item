@@ -1,4 +1,4 @@
-<squarespace:script src="slick.min.js">
+<squarespace:script src="slick.min.js" combo="false" />
 
 <div class="product-space">
 
