@@ -3,9 +3,11 @@
 <div class="product-space">
 
 	<div class="left half">
-		{.section item}
-			<div class="product-image"><img {@|image-meta} class="image" /></div>
-		{.end}
+		<div id="carousel">
+			{.repeated section items}
+				<div class="product-image"><img {@|image-meta} class="image" /></div>
+			{.end}
+		</div>
 	</div>
 
 	<div class="right half">
