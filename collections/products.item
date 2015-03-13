@@ -38,3 +38,12 @@
 	</div>
 
 </div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#carousel').slick({
+			prevArrow: '',
+			nextArrow: '<div class="arrow-holder"><div class="arrow"><i class="icon-arrow-right"></i></div></div>'
+		});
+	});
+</script>
