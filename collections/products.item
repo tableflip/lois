@@ -11,7 +11,6 @@
 			<div class="title">{title}</div>
 			<div class="price">{@|product-price}<div class="stock-{variants.qtyInStock}"></div></div>
 			<div class="description">{excerpt|safe}</div>
-			<div class="status">{item|product-status}</div>
 			<div class="checkout">{@|product-checkout}</div>
 		{.end}
 
@@ -23,7 +22,7 @@
 			      <div class="avatar-container">
 			        <a href="{fullUrl}" class="avatar" style="background-image: url('{assetUrl}?format=300w')"></a>
 			      </div>
-			      <div class="name"><a href="http://www.lois.me.uk/maker-page/{title|slugify}">{title}</a></div>
+			      <div class="name"><a href="http://www.lois.me.uk/maker-page/{title|slugify}"><squarespace:block-field id="maker-details" columns="12"/> {title}</a></div>
 			    </div>
 				{.end}
 			</squarespace:query>
