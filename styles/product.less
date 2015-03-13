@@ -125,3 +125,28 @@
 	}
 
 }
+
+.arrow-holder {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+
+  .arrow {
+
+    position: relative;
+    margin-top: 50%;
+    .transform(translateY(-50%));
+    padding-right: 2rem;
+    font-size: 4rem;
+
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+}
