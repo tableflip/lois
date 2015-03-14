@@ -6,7 +6,7 @@
 		<div id="carousel">
 			{.section item}
 				{.repeated section items}
-					<div class="product-image"><img {@|image-meta} class="image" /></div>
+					<div class="product-image"><div style="background-image: url('{assetUrl}?format=750w');" class="image"></div></div>
 				{.end}
 			{.end}
 		</div>
@@ -26,7 +26,7 @@
 				{.repeated section items}
 					<div class="maker-icon flow">
 			      <div class="avatar-container">
-			        <a href="{fullUrl}" class="avatar" style="background-image: url('{assetUrl}?format=300w')"></a>
+			        <a href="{fullUrl}" class="avatar" style="background-image: url('{assetUrl}?format=300w');"></a>
 			      </div>
 			      <div class="name"><squarespace:block-field id="maker-role-{id}" columns="1"/><span class="name-title"><p>{title}</p></span></div>
 			    </div>
