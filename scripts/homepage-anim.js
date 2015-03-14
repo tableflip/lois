@@ -16,10 +16,10 @@ $(document).ready(function() {
                 $('body').removeClass('prevent-scroll');
                 new ScrollScene({duration: 2200})
                     .setPin('.splash-scene')
-                    .addTo(controller2);
+                    .addTo(controller);
                 new ScrollScene({offset: 2200, duration: 0})
                     .setPin('.top-section', {pushFollowers: false, spacerClass: 'topSectionSpacer'})
-                    .addTo(controller2);
+                    .addTo(controller);
                 // ScrollMagic will not calculate the topbar spacer correctly as it is a different height on
                 // initialisation from when we need it to be fixed and the rest of the page scroll.
                 // So we need to update the minimum height of the spacer based on the CSS:
