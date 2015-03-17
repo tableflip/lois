@@ -8,7 +8,7 @@ $(document).ready(function() {
         // topSectionPin,
         vw = $(window).width() / 100,
         vh = $(window).height() / 100,
-        vmax = Math.max(vw, vh),
+        vmax = Math.max(vw, vh, 12.8),
         topSectionFactor = (vh > vw && vw <= 4) ? 30.5 : 21.5,
         tl = new TimelineLite({
             paused: true,
