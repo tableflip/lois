@@ -39,7 +39,7 @@
 
 		<main id="main" role="main" class="main-section {.section item}{.main-image?}has-img{.end}{.or}{.section collection}{.section mainImage}has-img{.end}{.end}{.end} {collection.title}">
 			<div class="container top-space wrapper" data-content-field="main-content">
-				<div style="text-align: left;">{{!-- To resolve SquareSpace idiocy --}}
+				<div style="text-align: left;">
 					{squarespace.main-content}
 				</div>
 			</div>

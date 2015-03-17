@@ -54,7 +54,7 @@
 
 				</div>
 
-				<div class="splash-button"><div class="centered-button yellow"><div class="button-text">Shop</div></div></div>
+				<div class="splash-button"><a class="centered-button yellow" href="/shop-sections"><div class="button-text">Shop</div></a></div>
 
 				<div class="splash-image">
 
@@ -70,7 +70,7 @@
 
 				</div>
 
-				<div class="splash-button"><a class="centered-button yellow" href={{pathFor route='makers'}}><div class="button-text">Made</div></a></div>
+				<div class="splash-button"><a class="centered-button yellow" href="/makers"><div class="button-text">Made</div></a></div>
 
 				<div class="splash-image">
 
