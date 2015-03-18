@@ -30,7 +30,7 @@ $(document).ready(function() {
     // Need to manually reset image container sizes to match images
     var maxImageHeight = vh * 125;
     $('img').bind('load', function() {
-      var $el = $(this); $el.parents('.splash-image').css('height', Math.min($el.height() * 100vw / $el.width(), maxImageHeight) + 'px');
+      var $el = $(this); $el.parents('.splash-image').css('height', Math.min($el.height() * 100 * vw / $el.width(), maxImageHeight) + 'px');
     });
 
     tl.add( TweenLite.to('.top-spacer', 2, {height: topSectionFactor * vmax}), "+=1" );
