@@ -2,10 +2,10 @@
   max-width: 100%;
 }
 
-.product-space {
+// tweak: { "type" : "value", "title" : "Product Image Width", "min" : 300, "max" : 900 }
+@productImageWidth: 500px;
 
-  // tweak: { "type" : "value", "title" : "Product Main Image Width", "min" : 300, "max" : 900 }
-  @product-image-width: 500px;
+.product-space {
 
   margin-left: auto;
   margin-right: auto;
@@ -20,7 +20,7 @@
     text-align: left;
 
     &.left {
-      width: @product-image-width;
+      width: @productImageWidth;
       max-width: 100%;
       float: left;
       margin-right: 1rem;
