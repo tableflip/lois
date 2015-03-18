@@ -27,7 +27,9 @@ $(document).ready(function() {
             }
         });
 
-    $('.splash-image').css('height', (vh * 125) + 'px');
+    // Need to manually reset image container sizes to match images
+    var maxImageHeight = vh * 125;
+    $('img').each(function(i, el) {var $el = $(el); $el.parents('.splash-image').css('height', Math.min($el.height(), maxImageHeight) + 'px');});
 
     tl.add( TweenLite.to('.top-spacer', 2, {height: topSectionFactor * vmax}), "+=1" );
     tl.add( TweenLite.to('.lois-blurb', 1, {opacity: 1}) );
