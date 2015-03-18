@@ -22,6 +22,7 @@
 
 		<div class="maker-section">
 		{.repeated section item.categories}
+			<h3>{@}</h3>
 			<squarespace:query collection="makers" limit="1" tag="{@}">
 				{.repeated section items}
 					<div class="maker-icon flow">
