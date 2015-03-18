@@ -59,16 +59,16 @@
 				<div class="splash-image">
 
 					<div class="image-block">
-						<a href="/shop-sections"><squarespace:block-field id="shop-image" columns="1" /></a>
+						<squarespace:block-field id="shop-image" columns="1" />
 					</div>
 
-					<div class="splash-social full-height">
+					<a href="/shop-sections"><div class="splash-social full-height">
 						<div class="social-content">
 							<div class="header">
-								<a href="/shop-sections">shop the collection</a>
+								shop the collection
 							</div>
 						</div>
-					</div>
+					</div></a>
 
 				</div>
 
@@ -77,16 +77,16 @@
 				<div class="splash-image">
 
 					<div class="image-block">
-						<a href="/makers"><squarespace:block-field id="made-image" columns="1" /></a>
+						<squarespace:block-field id="made-image" columns="1" />
 					</div>
 
-					<div class="splash-social full-height">
+					<a href="/makers"><div class="splash-social full-height">
 						<div class="social-content">
 							<div class="header">
-								<a href="/makers">watch the films</a>
+								watch the films
 							</div>
 						</div>
-					</div>
+					</div></a>
 
 				</div>
 
