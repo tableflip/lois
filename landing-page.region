@@ -56,7 +56,7 @@
 
 				<div class="splash-button"><a class="centered-button yellow" href="/shop-sections"><div class="button-text">Shop</div></a></div>
 
-				<div class="splash-image">
+				<a href="/shop-sections"><div class="splash-image">
 
 					<div class="image-block">
 						<a href="/shop-sections"><squarespace:block-field id="shop-image" columns="1" /></a>
@@ -68,14 +68,14 @@
 						</div>
 					</div>
 
-				</div>
+				</div></a>
 
 				<div class="splash-button"><a class="centered-button yellow" href="/makers"><div class="button-text">Made</div></a></div>
 
-				<div class="splash-image">
+				<a href="/makers"><div class="splash-image">
 
 					<div class="image-block">
-						<a href="/shop-sections"><squarespace:block-field id="made-image" columns="1" /></a>
+						<a href="/makers"><squarespace:block-field id="made-image" columns="1" /></a>
 					</div>
 
 					<div class="splash-social full-height">
@@ -86,7 +86,7 @@
 						</div>
 					</div>
 
-				</div>
+				</div></a>
 
 				<div class="splash-button"><div class="centered-button yellow"><div class="button-text">Fun</div></div></div>
 
@@ -99,7 +99,7 @@
 					<div class="splash-social">
 						<div class="social-content">
 							<div class="header">get involved</div>
-							<div class="subheader">join our mailing list</div>
+							<div class="subheader"><a href="/mailing-list">join our mailing list</a></div>
 							<div class="social-icons">
 								<i class="icon-twitter-circle"></i>
 								<i class="icon-instagram-circle"></i>
@@ -111,13 +111,7 @@
 
 				<div class="splash-legal">
 
-					<div class="item left">
-						<squarespace:block-field id="left-info" columns="1" />
-					</div>
-
-					<div class="item right">
-						<squarespace:block-field id="right-info" columns="1" />
-					</div>
+					<squarespace:block-field id="about-text" columns="12" />
 
 					<div class="item centered">
 						<span class="section"><squarespace:block-field id="copyright-text" columns="1" /></span>
