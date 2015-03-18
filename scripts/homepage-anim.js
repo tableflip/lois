@@ -27,6 +27,8 @@ $(document).ready(function() {
             }
         });
 
+    $('.splash-image').css('height', (vh * 125) + 'px');
+
     tl.add( TweenLite.to('.top-spacer', 2, {height: topSectionFactor * vmax}), "+=1" );
     tl.add( TweenLite.to('.lois-blurb', 1, {opacity: 1}) );
     tl.add( TweenMax.to('.down-arrow .icon-arrow-down', 0.5, {opacity: 1, repeat: 3, yoyo: true}), '-=0.5' );
