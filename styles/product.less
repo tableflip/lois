@@ -5,6 +5,9 @@
 // tweak: { "type" : "value", "title" : "Product Image Width", "min" : 300, "max" : 900 }
 @productImageWidth: 500px;
 
+// tweak: { "type" : "value", "title" : "Product Image Padding", "min" : 0, "max" : 10 }
+@productImagePadding: 1rem;
+
 .product-space {
 
   margin-left: auto;
@@ -23,12 +26,12 @@
       width: @productImageWidth;
       max-width: 100%;
       float: left;
-      margin-right: 1rem;
+      margin-right: @productImagePadding;
     }
     &.right {
       overflow: hidden;
       min-width: 200px;
-      margin-left: 1rem;
+      margin-left: @productImagePadding;
     }
 
     .product-image {
