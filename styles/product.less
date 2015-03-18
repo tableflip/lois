@@ -1,6 +1,9 @@
 // tweak: { "type" : "value", "title" : "Product Image Width", "min" : 300, "max" : 900, category : "Product Page" }
 @productImageWidth: 500px;
 
+// tweak: { "type" : "value", "title" : "Product Page Spacing", "min" : 0, "max" : 10, category : "Product Page" }
+@productPageSpacing: 2rem;
+
 .main-section.Products .container {
   max-width: 100%;
 }
@@ -19,14 +22,11 @@
     vertical-align: text-top;
     text-align: left;
 
-    // tweak: { "type" : "value", "title" : "Product Image Width", category : "Product Page" }
-    @productImageWidth: 500px;
-
     &.left {
       width: @productImageWidth;
       max-width: 100%;
       float: left;
-      margin-right: 2rem;;
+      margin-right: @productPageSpacing;
     }
     &.right {
       overflow: hidden;
