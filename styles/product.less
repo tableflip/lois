@@ -4,11 +4,12 @@
 
 .product-space {
 
-  @product-padding: 3%;
-  @double-padding: @product-padding * 2;
+  // tweak: { "type" : "value", "title" : "Product Main Image Width", "min" : 20, "max" : 60 }
+  @product-image-width: 41.5rem;
 
   margin-left: -1rem;
   margin-right: -1rem;
+  text-align: center;
 
   .half {
     display: inline-block;
@@ -21,10 +22,10 @@
     text-align: left;
 
     &.left {
-      width: 37.5rem;
+      width: @product-image-width;
     }
     &.right {
-      width: 52.5rem;
+      width: 94rem - @product-image-width;
     }
 
     .product-image {
@@ -49,8 +50,8 @@
       }
 
       .lois-exclusive {
-        top: @product-padding;
-        left: @product-padding;
+        top: 4%;
+        left: 4%;
         position: absolute;
         width: 40%;
         height: 20%;
