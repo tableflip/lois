@@ -3,7 +3,7 @@
 	<squarespace:query collection="products" limit="3">
 
 		{.repeated section items}
-			<div class="product"><a href="{fullUrl}"><div style="background-image: url('{assetUrl}?format=500w');" class="image"></div><div class="title">{title} {@|product-price}</div></a></div>
+			<div class="product {item|item-classes}"><a href="{fullUrl}"><div style="background-image: url('{assetUrl}?format=500w');" class="image"></div><div class="title">{title} {@|product-price}</div></a></div>
 		{.end}
 
 	</squarespace:query>
@@ -11,7 +11,7 @@
 	<h2 class="title-divider">All Products</h2>
 
 		{.repeated section items}
-			<div class="product index-{@index}"><a href="{fullUrl}"><div style="background-image: url('{assetUrl}?format=500w');" class="image"></div><div class="title">{title} {@|product-price}</div></a></div>
+			<div class="product index-{@index} {item|item-classes}"><a href="{fullUrl}"><div style="background-image: url('{assetUrl}?format=500w');" class="image"></div><div class="title">{title} {@|product-price}</div></a></div>
 		{.end}
 
 	<div class="slash-footer">
