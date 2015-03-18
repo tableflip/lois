@@ -4,28 +4,31 @@
 
 .product-space {
 
-  // tweak: { "type" : "value", "title" : "Product Main Image Width", "min" : 20, "max" : 60 }
-  @product-image-width: 41.5rem;
+  // tweak: { "type" : "value", "title" : "Product Main Image Width", "min" : 300, "max" : 900 }
+  @product-image-width: 500px;
 
-  margin-left: -1rem;
-  margin-right: -1rem;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 
   .half {
     display: inline-block;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 1rem;
-    margin-right: 1rem;
     box-sizing: border-box;
     vertical-align: text-top;
     text-align: left;
 
     &.left {
       width: @product-image-width;
+      max-width: 100%;
+      float: left;
+      margin-right: 1rem;
     }
     &.right {
-      width: 94rem - @product-image-width;
+      overflow: hidden;
+      min-width: 200px;
+      margin-left: 1rem;
     }
 
     .product-image {
