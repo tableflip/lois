@@ -16,7 +16,7 @@
 		{.section item}
 			<div class="title">{title}</div>
 			<div class="price">{@|product-price}<div class="stock-{variants.qtyInStock}"></div></div>
-			<div class="description">{excerpt|safe}</div>
+			<div class="description">{excerpt}</div>
 			<div class="checkout">{@|product-checkout}</div>
 		{.end}
 
