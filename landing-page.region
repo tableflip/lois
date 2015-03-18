@@ -59,7 +59,7 @@
 				<div class="splash-image">
 
 					<div class="image-block">
-						<squarespace:block-field id="shop-image" columns="1" />
+						<a href="/shop-sections"><squarespace:block-field id="shop-image" columns="1" /></a>
 					</div>
 
 					<div class="splash-social full-height">
@@ -75,7 +75,7 @@
 				<div class="splash-image">
 
 					<div class="image-block">
-						<squarespace:block-field id="made-image" columns="1" />
+						<a href="/shop-sections"><squarespace:block-field id="made-image" columns="1" /></a>
 					</div>
 
 					<div class="splash-social full-height">
