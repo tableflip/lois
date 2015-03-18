@@ -6,7 +6,7 @@
 		<div id="carousel">
 			{.section item}
 				{.repeated section items}
-					<div class="product-image {item|item-classes}"><div style="background-image: url('{assetUrl}?format=750w');" class="image"></div></div>
+					<div class="product-image {item|item-classes}"><div style="background-image: url('{assetUrl}?format=750w');" class="image"></div><div class="lois-exclusive"></div></div>
 				{.end}
 			{.end}
 		</div>
