@@ -12,7 +12,7 @@ body .absolute-cart-box {
       -webkit-transition-property: background-color, color;
       -webkit-transition-timing-function: linear, linear;
       background-color: rgb(255, 255, 255) !important;
-      background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+      background-image: none;
       border-bottom-color: @darkgrey;
       border-bottom-left-radius: 3px;
       border-bottom-right-radius: 3px;
@@ -56,6 +56,15 @@ body .absolute-cart-box {
       visibility: visible;
       zoom: 1;
 
+      &:hover {
+        color: white;
+        background-color: @darkgrey !important;
+
+        .sqs-pill-shopping-cart-content > * {
+          color: white;
+        }
+      }
+
       .sqs-pill-shopping-cart-content {
 
         height: @top-menu-height * 0.8;
@@ -66,7 +75,8 @@ body .absolute-cart-box {
         -webkit-transition-duration: 0.1s, 0.1s;
         -webkit-transition-property: background-color, color;
         -webkit-transition-timing-function: linear, linear;
-        background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important;
+        background-image: none;
+        background-color: white;
         border: none !important;
         box-shadow: none !important;
         box-sizing: border-box;
