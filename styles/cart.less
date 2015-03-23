@@ -13,18 +13,18 @@ body .absolute-cart-box {
       -webkit-transition-timing-function: linear, linear;
       background-color: rgb(255, 255, 255) !important;
       background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
-      border-bottom-color: rgb(68, 68, 68);
+      border-bottom-color: @darkgray;
       border-bottom-left-radius: 3px;
       border-bottom-right-radius: 3px;
       border-bottom-style: solid;
       border-bottom-width: 2px;
-      border-left-color: rgb(68, 68, 68);
+      border-left-color: @darkgrey;
       border-left-style: solid;
       border-left-width: 2px;
-      border-right-color: rgb(68, 68, 68);
+      border-right-color: @darkgrey;
       border-right-style: solid;
       border-right-width: 2px;
-      border-top-color: rgb(68, 68, 68);
+      border-top-color: @darkgrey;
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       border-top-style: solid;
@@ -70,7 +70,7 @@ body .absolute-cart-box {
         border: none !important;
         box-shadow: none !important;
         box-sizing: border-box;
-        color: rgb(68, 68, 68);
+        color: @darkgrey;
         cursor: pointer;
         display: inline-block;
         font-family: proxima-nova, serif;
@@ -96,6 +96,15 @@ body .absolute-cart-box {
         white-space: nowrap;
         zoom: 1;
 
+        &:hover {
+          color: white;
+          background-color: @darkgrey;
+
+          > * {
+            color: white;
+          }
+        }
+
         .subtotal {
 
           position: static;
@@ -105,7 +114,7 @@ body .absolute-cart-box {
 
         > * {
 
-            color: rgb(68, 68, 68);
+            color: @darkgrey;
             text-transform: uppercase !important;
 
         }
