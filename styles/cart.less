@@ -76,7 +76,7 @@ body .absolute-cart-box {
         -webkit-transition-property: background-color, color;
         -webkit-transition-timing-function: linear, linear;
         background-image: none;
-        background-color: white;
+        background-color: transparent;
         border: none !important;
         box-shadow: none !important;
         box-sizing: border-box;
@@ -105,15 +105,6 @@ body .absolute-cart-box {
         white-space: nowrap;
         zoom: 1;
 
-        &:hover {
-          color: white;
-          background-color: @darkgrey !important;
-
-          > * {
-            color: white;
-          }
-        }
-
         .subtotal {
 
           position: static;
@@ -124,6 +115,7 @@ body .absolute-cart-box {
         .icon {
 
           background-image: none;
+          top: 0;
 
           &:before {
             font-family: 'lois';
