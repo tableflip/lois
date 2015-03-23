@@ -81,7 +81,6 @@ body .absolute-cart-box {
         height: auto;
         letter-spacing: 1px;
         line-height: 18px;
-        min-width: 220px;
         outline-color: rgb(39, 39, 39);
         outline-style: none;
         outline-width: 0px;
@@ -98,7 +97,7 @@ body .absolute-cart-box {
 
         &:hover {
           color: white;
-          background-color: @darkgrey;
+          background-color: @darkgrey !important;
 
           > * {
             color: white;
@@ -109,6 +108,16 @@ body .absolute-cart-box {
 
           position: static;
           vertical-align: middle;
+
+        }
+
+        .icon {
+
+          background-image: none;
+
+          &:before {
+            content: "\f07a";
+          }
 
         }
 
