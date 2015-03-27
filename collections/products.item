@@ -34,6 +34,10 @@
 			{.end}
 		</squarespace:query>
 	{.end}
+
+	{.section item}
+		<squarespace:block-field id="maker-roles-{id}" columns="12" />
+	{.end}
 	</div>
 
 </div>
@@ -42,7 +46,7 @@
 	$(document).ready(function(){
 		$('#carousel').slick({
 			prevArrow: '',
-			nextArrow: '<div class="arrow-holder"><div class="arrow"><i class="icon-arrowright"></i></div></div>'
+			nextArrow: '<div class="arrow-holder"><div class="arrow"><i class="icon-arrow-right"></i></div></div>'
 		});
 	});
 </script>
