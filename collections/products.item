@@ -24,7 +24,7 @@
 	<div class="maker-section">
 
 	{.section item}
-		<squarespace:block-field id="maker-roles-{id}" columns="12" />
+		<squarespace:block-field id="maker-roles-{id}" columns="12"/>
 	{.end}
 
 	{.repeated section item.categories}
