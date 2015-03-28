@@ -35,7 +35,7 @@ $(document).ready(function() {
 
     tl.add( TweenLite.to('.top-spacer', 2, {height: topSectionFactor * vmax}), "+=1" );
     tl.add( TweenLite.to('.lois-blurb', 1, {opacity: 1}) );
-    tl.add( TweenMax.to('.down-arrow .icon-arrowdown', 0.5, {opacity: 1, repeat: 2, yoyo: true}), '-=0.5' );
+    tl.add( TweenMax.to('.down-arrow i', 0.5, {opacity: 1, repeat: 2, yoyo: true}), '-=0.5' );
 
     new ScrollScene({offset: 0, duration: 400})
         .setTween(TweenLite.to('.lois-blurb', 1, {opacity: 0}) )
@@ -66,6 +66,9 @@ $(document).ready(function() {
     new ScrollScene({offset: 1200, duration: 400})
         .setTween(TweenLite.to('.lois-blurb', 1, {height: 0}))
         .addTo(controller).on('');
+    new ScrollScene({triggerElement: '.splash-legal', triggerHook: 0.5})
+        .setTween(TweenList.to('.down-arrow i', 0.5, {opacity: 0}))
+        .addTo(controller);
 
     $(document).ready(function() {
       controller.scrollTo(0);
