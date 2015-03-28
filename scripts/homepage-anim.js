@@ -67,7 +67,7 @@ $(document).ready(function() {
         .setTween(TweenLite.to('.lois-blurb', 1, {height: 0}))
         .addTo(controller).on('');
     new ScrollScene({triggerElement: '.splash-legal', triggerHook: 0.5})
-        .setTween(TweenList.to('.down-arrow i', 0.5, {opacity: 0}))
+        .setTween(TweenLite.to('.down-arrow i', 0.5, {opacity: 0}))
         .addTo(controller);
 
     $(document).ready(function() {
