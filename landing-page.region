@@ -126,7 +126,7 @@
 
 		</div>
 
-		<div class="down-arrow"><i class="icon-arrow-down" style="opacity: 0;"></i></div>
+		<div class="down-arrow"><i class="icon-arrowdown" style="opacity: 0;"></i></div>
 
 	{.if template.mobileStylesEnabled}{.or}
 	  <script>
