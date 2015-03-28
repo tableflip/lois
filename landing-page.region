@@ -90,13 +90,15 @@
 
 				</div>
 
-				<div class="splash-button"><div class="centered-button yellow"><div class="button-text">Fun</div></div></div>
+				<div class="splash-button"><a class="centered-button yellow" href="/workshops"><div class="button-text">Fun</div></a></div>
 
 				<div class="splash-image">
 
-					<div class="image-block">
-						<squarespace:block-field id="fun-image" columns="1" />
-					</div>
+					<a href="/workshops">
+						<div class="image-block">
+							<squarespace:block-field id="fun-image" columns="1" />
+						</div>
+					</a>
 
 					<div class="splash-social">
 						<div class="social-content">
