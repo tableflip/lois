@@ -35,7 +35,7 @@ $(document).ready(function() {
 
     tl.add( TweenLite.to('.top-spacer', 2, {height: topSectionFactor * vmax}), "+=1" );
     tl.add( TweenLite.to('.lois-blurb', 1, {opacity: 1}) );
-    tl.add( TweenMax.to('.down-arrow .icon-arrowdown', 0.5, {opacity: 1, repeat: 3, yoyo: true}), '-=0.5' );
+    tl.add( TweenMax.to('.down-arrow .icon-arrowdown', 0.5, {opacity: 1, repeat: 2, yoyo: true}), '-=0.5' );
 
     new ScrollScene({offset: 0, duration: 400})
         .setTween(TweenLite.to('.lois-blurb', 1, {opacity: 0}) )
