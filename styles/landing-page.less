@@ -334,6 +334,15 @@ body {
 
 			&.faq {
 				font-size: 2rem;
+
+				a {
+					text-decoration: underline;
+					color: @black;
+					&:hover, &:active {
+						color: @darkgrey;
+					}
+				}
+
 			}
 		}
 	}
@@ -353,6 +362,10 @@ body {
 		color: #444444;
 		color: rgba(0, 0, 0, 0.6);
 		text-shadow: 0 0 3px rgba(255, 255, 255, 0.6);
+
+		&.hidden {
+			visibility: hidden;
+		}
 	}
 }
 
