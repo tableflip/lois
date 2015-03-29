@@ -46,7 +46,7 @@
 
 			<div class="main-section">
 
-				<div class="splash-image">
+				<div class="splash-image one">
 
 					<div class="image-block">
 						<squarespace:block-field id="header-image" columns="1" />
@@ -56,7 +56,7 @@
 
 				<div class="splash-button"><a class="centered-button yellow" href="/shop-sections"><div class="button-text">Shop</div></a></div>
 
-				<div class="splash-image">
+				<div class="splash-image two">
 
 					<div class="image-block">
 						<squarespace:block-field id="shop-image" columns="1" />
@@ -74,7 +74,7 @@
 
 				<div class="splash-button"><a class="centered-button yellow" href="/makers"><div class="button-text">Made</div></a></div>
 
-				<div class="splash-image">
+				<div class="splash-image three">
 
 					<div class="image-block">
 						<squarespace:block-field id="made-image" columns="1" />
@@ -92,7 +92,7 @@
 
 				<div class="splash-button"><a class="centered-button yellow" href="/workshops"><div class="button-text">Fun</div></a></div>
 
-				<div class="splash-image">
+				<div class="splash-image four">
 
 					<a href="/workshops">
 						<div class="image-block">

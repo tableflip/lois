@@ -1,6 +1,18 @@
 /*****************************************************************************/
 /* Home: Style */
 /*****************************************************************************/
+// tweak: { "type" : "value", "title" : "Image 1 brightness", "min" : 0, "max" : 100, "category" : "Landing Page" }
+@image-1-brightness: 100%;
+
+// tweak: { "type" : "value", "title" : "Image 2 brightness", "min" : 0, "max" : 100, "category" : "Landing Page" }
+@image-2-brightness: 100%;
+
+// tweak: { "type" : "value", "title" : "Image 3 brightness", "min" : 0, "max" : 100, "category" : "Landing Page" }
+@image-3-brightness: 100%;
+
+// tweak: { "type" : "value", "title" : "Image 4 brightness", "min" : 0, "max" : 100, "category" : "Landing Page" }
+@image-4-brightness: 100%;
+
 @yellow: #f8e71c;
 @black: #222;
 @white: #ffffff;
@@ -138,6 +150,36 @@ body {
 		}
 	}
 }
+
+.splash-image.one img {
+	filter: brightness(@image-1-brightness);
+	-webkit-filter: filter(@image-1-brightness);
+	-moz-filter: filter(@image-1-brightness);
+	-o-filter: filter(@image-1-brightness);
+	-ms-filter: filter(@image-1-brightness);
+}
+.splash-image.two img {
+	filter: brightness(@image-2-brightness);
+	-webkit-filter: filter(@image-2-brightness);
+	-moz-filter: filter(@image-2-brightness);
+	-o-filter: filter(@image-2-brightness);
+	-ms-filter: filter(@image-2-brightness);
+}
+.splash-image.three img {
+	filter: brightness(@image-3-brightness);
+	-webkit-filter: filter(@image-3-brightness);
+	-moz-filter: filter(@image-3-brightness);
+	-o-filter: filter(@image-3-brightness);
+	-ms-filter: filter(@image-3-brightness);
+}
+.splash-image.four img {
+	filter: brightness(@image-4-brightness);
+	-webkit-filter: filter(@image-4-brightness);
+	-moz-filter: filter(@image-4-brightness);
+	-o-filter: filter(@image-4-brightness);
+	-ms-filter: filter(@image-4-brightness);
+}
+
 .surround {
 	position: absolute;
 	width: 100%;
