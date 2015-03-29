@@ -70,7 +70,7 @@ $(document).ready(function() {
         .setTween(TweenLite.to('.down-arrow i', 0.5, {opacity: 0}))
         .addTo(controller);
     new ScrollScene({triggerElement: '.splash-legal', triggerHook: 0.7})
-        .scene.setClassToggle('.down-arrow i', 'hidden')
+        .setClassToggle('.down-arrow i', 'hidden')
         .addTo(controller);
 
     $(document).ready(function() {
