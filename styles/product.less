@@ -98,15 +98,6 @@
       font-size: 1.525rem;
       text-align: initial;
 
-      @media only screen
-      	and (max-width : 640px) {
-          font-size: 2.5rem;
-
-          .sqs-layout .sqs-row .sqs-block:last-child {
-            padding-bottom: 1rem;
-          }
-        }
-
       > .row {
         margin-left: 0;
         margin-right: 0;
@@ -117,6 +108,12 @@
       }
 
       @media only screen and (max-width: 640px) {
+
+        font-size: 2.5rem;
+
+        .sqs-layout .sqs-row .sqs-block:last-child {
+          padding-bottom: 1rem;
+        }
 
         > .row {
           .col {
@@ -137,6 +134,16 @@
         }
 
       }
+    }
+
+    .name .name-title {
+
+      @media only screen and (max-width: 640px) {
+
+        font-size: 2.5rem;
+
+      }
+
     }
   }
 
