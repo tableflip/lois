@@ -18,10 +18,6 @@ $(document).ready(function() {
       var $el = $(this); $el.parents('.splash-image').css('height', Math.min($el.height() * 100 * vw / $el.width(), maxImageHeight) + 'px');
     });
 
-    tl.add( TweenLite.to('.top-spacer', 2, {height: topSectionFactor * vmax}), "+=1" );
-    tl.add( TweenLite.to('.lois-blurb', 1, {opacity: 1}) );
-    tl.add( TweenMax.to('.down-arrow i', 0.5, {opacity: 1, repeat: 2, yoyo: true}), '-=0.5' );
-
     if (vw >= 6.4) {
 
       tl = new TimelineLite({
