@@ -106,7 +106,7 @@ $(document).ready(function() {
 
       tl.add( TweenLite.to('.top-spacer', 2, {height: topSectionFactor * vmax}), "+=1" );
       tl.add( TweenLite.to('.lois-blurb', 1, {opacity: 1}) );
-      tl.add( TweenLite.to('.lois-blurb', 1, {opacity: 0}, "+=5") );
+      tl.add( TweenLite.to('.lois-blurb', 1, {opacity: 0}), "+=3" );
       tl.add( TweenLite.to('.top-spacer', 2, {height: 0}), "-=0.5" );
       tl.add( TweenLite.to('.top-menu .centered-button', 2, {height: LOIS_BUTTON_SIZE * vmax, width: LOIS_BUTTON_SIZE * vmax}), "-=2" );
       tl.add( TweenLite.to('.top-menu .centered-button .button-text', 2, {'font-size': LOIS_BUTTON_SIZE * 0.26 * vmax}), "-=2" );
