@@ -49,4 +49,7 @@
 			nextArrow: '<div class="arrow-holder"><div class="arrow"><i class="icon-arrowright"></i></div></div>'
 		});
 	});
+  $(document).ready(function(){
+		$('[id^="maker-roles"] p span').css('font-size', '');
+  });
 </script>
