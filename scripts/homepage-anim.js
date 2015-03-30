@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  $('body').addClass('prevent-scroll');
+
     var LOIS_BUTTON_SIZE = 6.7,
         LOIS_BUTTON_BORDER = 0.3,
         TOP_MENU_HEIGHT = 4.6;
@@ -79,7 +81,6 @@ $(document).ready(function() {
 
       $(document).ready(function() {
         controller.scrollTo(0);
-        $('body').addClass('prevent-scroll');
         $('.splash-scene').removeClass('invisible');
         setTimeout(function() {
           tl.play();
@@ -118,7 +119,6 @@ $(document).ready(function() {
 
       $(document).ready(function() {
         controller.scrollTo(0);
-        $('body').addClass('prevent-scroll');
         $('.splash-scene').removeClass('invisible');
         setTimeout(function() {
           tl.play();
