@@ -90,14 +90,14 @@ $(document).ready(function() {
 
       tl.add( TweenLite.to('.lois-blurb', 1, {opacity: 0}, "+=2") );
       tl.add( TweenLite.to('.top-spacer', 2, {height: 0}), "-=0.5" );
-      tl.add( TweenLite.to('.top-menu .centered-button', 2, {height: LOIS_BUTTON_SIZE * vmax, width: LOIS_BUTTON_SIZE * vmax}, "-=2") );
-      tl.add( TweenLite.to('.top-menu .centered-button .button-text', 2, {'font-size': LOIS_BUTTON_SIZE * 0.26 * vmax}, "-=4") );
-      tl.add( TweenLite.to('.top-menu', 1, {height: TOP_MENU_HEIGHT * vmax}, "-=6"));
-      tl.add( TweenLite.to('.top-menu .centered-button', 1, {top: ((LOIS_BUTTON_SIZE * 0.5) + LOIS_BUTTON_BORDER) * vmax}, "-=7"));
+      tl.add( TweenLite.to('.top-menu .centered-button', 2, {height: LOIS_BUTTON_SIZE * vmax, width: LOIS_BUTTON_SIZE * vmax}) );
+      tl.add( TweenLite.to('.top-menu .centered-button .button-text', 2, {'font-size': LOIS_BUTTON_SIZE * 0.26 * vmax}), "-=2" );
+      tl.add( TweenLite.to('.top-menu', 1, {height: TOP_MENU_HEIGHT * vmax}), "-=2");
+      tl.add( TweenLite.to('.top-menu .centered-button', 1, {top: ((LOIS_BUTTON_SIZE * 0.5) + LOIS_BUTTON_BORDER) * vmax}), "-=2");
       tl.add( TweenLite.to('.top-menu .menu-items .item', 1, {x: 0}));
-      tl.add( TweenLite.to('.top-menu .menu-items', 1, {opacity: 1}, "-=0.5"));
-      tl.add( TweenLite.to('.lois-blurb', 1, {height: 0}, "-=1"));
-
+      tl.add( TweenLite.to('.top-menu .menu-items', 1, {opacity: 1}), "-=0.5");
+      tl.add( TweenLite.to('.lois-blurb', 1, {height: 0}), "-=1");
+      
       $(document).ready(function() {
         controller.scrollTo(0);
         $('body').addClass('prevent-scroll');
