@@ -37,48 +37,75 @@ $(document).ready(function() {
     tl.add( TweenLite.to('.lois-blurb', 1, {opacity: 1}) );
     tl.add( TweenMax.to('.down-arrow i', 0.5, {opacity: 1, repeat: 2, yoyo: true}), '-=0.5' );
 
-    new ScrollScene({offset: 0, duration: 400})
-        .setTween(TweenLite.to('.lois-blurb', 1, {opacity: 0}) )
-        .addTo(controller);
-    new ScrollScene({offset: 200, duration: 800})
-        .setTween(TweenLite.to('.top-spacer', 2, {height: 0}) )
-        .addTo(controller);
-    new ScrollScene({offset: 200, duration: 800})
-        .setTween(TweenLite.to('.top-menu .centered-button', 2, {height: LOIS_BUTTON_SIZE * vmax, width: LOIS_BUTTON_SIZE * vmax}) )
-        .addTo(controller);
-    new ScrollScene({offset: 200, duration: 800})
-        .setTween(TweenLite.to('.top-menu .centered-button .button-text', 2, {'font-size': LOIS_BUTTON_SIZE * 0.26 * vmax}) )
-        .addTo(controller);
+    if (vw >= 6.4) {
 
-    new ScrollScene({offset: 200, duration: 800})
-        .setTween(TweenLite.to('.top-menu', 1, {height: TOP_MENU_HEIGHT * vmax}))
-        .addTo(controller);
-    new ScrollScene({offset: 200, duration: 800})
-        .setTween(TweenLite.to('.top-menu .centered-button', 1, {top: ((LOIS_BUTTON_SIZE * 0.5) + LOIS_BUTTON_BORDER) * vmax}))
-        .addTo(controller);
+      new ScrollScene({offset: 0, duration: 400})
+          .setTween(TweenLite.to('.lois-blurb', 1, {opacity: 0}) )
+          .addTo(controller);
+      new ScrollScene({offset: 200, duration: 800})
+          .setTween(TweenLite.to('.top-spacer', 2, {height: 0}) )
+          .addTo(controller);
+      new ScrollScene({offset: 200, duration: 800})
+          .setTween(TweenLite.to('.top-menu .centered-button', 2, {height: LOIS_BUTTON_SIZE * vmax, width: LOIS_BUTTON_SIZE * vmax}) )
+          .addTo(controller);
+      new ScrollScene({offset: 200, duration: 800})
+          .setTween(TweenLite.to('.top-menu .centered-button .button-text', 2, {'font-size': LOIS_BUTTON_SIZE * 0.26 * vmax}) )
+          .addTo(controller);
 
-    new ScrollScene({offset: 1000, duration: 600})
-        .setTween(TweenLite.to('.top-menu .menu-items .item', 1, {x: 0}))
-        .addTo(controller);
-    new ScrollScene({offset: 1200, duration: 400})
-        .setTween(TweenLite.to('.top-menu .menu-items', 1, {opacity: 1}))
-        .addTo(controller);
-    new ScrollScene({offset: 1200, duration: 400})
-        .setTween(TweenLite.to('.lois-blurb', 1, {height: 0}))
-        .addTo(controller).on('');
-    new ScrollScene({triggerElement: '.splash-legal', triggerHook: 0.5})
-        .setTween(TweenLite.to('.down-arrow i', 0.5, {opacity: 0}))
-        .addTo(controller);
-    new ScrollScene({triggerElement: '.splash-legal', triggerHook: 0.7})
-        .setClassToggle('.down-arrow i', 'hidden')
-        .addTo(controller);
+      new ScrollScene({offset: 200, duration: 800})
+          .setTween(TweenLite.to('.top-menu', 1, {height: TOP_MENU_HEIGHT * vmax}))
+          .addTo(controller);
+      new ScrollScene({offset: 200, duration: 800})
+          .setTween(TweenLite.to('.top-menu .centered-button', 1, {top: ((LOIS_BUTTON_SIZE * 0.5) + LOIS_BUTTON_BORDER) * vmax}))
+          .addTo(controller);
 
-    $(document).ready(function() {
-      controller.scrollTo(0);
-      $('body').addClass('prevent-scroll');
-      $('.splash-scene').removeClass('invisible');
-      setTimeout(function() {
-        tl.play();
-      }, 500);
-    });
+      new ScrollScene({offset: 1000, duration: 600})
+          .setTween(TweenLite.to('.top-menu .menu-items .item', 1, {x: 0}))
+          .addTo(controller);
+      new ScrollScene({offset: 1200, duration: 400})
+          .setTween(TweenLite.to('.top-menu .menu-items', 1, {opacity: 1}))
+          .addTo(controller);
+      new ScrollScene({offset: 1200, duration: 400})
+          .setTween(TweenLite.to('.lois-blurb', 1, {height: 0}))
+          .addTo(controller).on('');
+      new ScrollScene({triggerElement: '.splash-legal', triggerHook: 0.5})
+          .setTween(TweenLite.to('.down-arrow i', 0.5, {opacity: 0}))
+          .addTo(controller);
+      new ScrollScene({triggerElement: '.splash-legal', triggerHook: 0.7})
+          .setClassToggle('.down-arrow i', 'hidden')
+          .addTo(controller);
+
+      $(document).ready(function() {
+        controller.scrollTo(0);
+        $('body').addClass('prevent-scroll');
+        $('.splash-scene').removeClass('invisible');
+        setTimeout(function() {
+          tl.play();
+        }, 500);
+      });
+
+    }
+
+    else {
+
+      tl.add( TweenLite.to('.lois-blurb', 1, {opacity: 0}, "+=2") );
+      tl.add( TweenLite.to('.top-spacer', 2, {height: 0}), "-=0.5" );
+      tl.add( TweenLite.to('.top-menu .centered-button', 2, {height: LOIS_BUTTON_SIZE * vmax, width: LOIS_BUTTON_SIZE * vmax}) );
+      tl.add( TweenLite.to('.top-menu .centered-button .button-text', 2, {'font-size': LOIS_BUTTON_SIZE * 0.26 * vmax}, "-=2") );
+      tl.add( TweenLite.to('.top-menu', 1, {height: TOP_MENU_HEIGHT * vmax}, "-=2"));
+      tl.add( TweenLite.to('.top-menu .centered-button', 1, {top: ((LOIS_BUTTON_SIZE * 0.5) + LOIS_BUTTON_BORDER) * vmax}, "-=2"));
+      tl.add( TweenLite.to('.top-menu .menu-items .item', 1, {x: 0}));
+      tl.add( TweenLite.to('.top-menu .menu-items', 1, {opacity: 1}, "-=0.5"));
+      tl.add( TweenLite.to('.lois-blurb', 1, {height: 0}, "-=1"));
+
+      $(document).ready(function() {
+        controller.scrollTo(0);
+        $('body').addClass('prevent-scroll');
+        $('.splash-scene').removeClass('invisible');
+        setTimeout(function() {
+          tl.play();
+        }, 500);
+      });      
+
+    }
 });
