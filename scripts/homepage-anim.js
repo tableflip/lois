@@ -10,22 +10,7 @@ $(document).ready(function() {
         vh = $(window).height() / 100,
         vmax = Math.min(Math.max(vw, vh), 12.8),
         topSectionFactor = (vh > vw && vw <= 4) ? 30.5 : 21.5,
-        tl = new TimelineLite({
-            paused: true,
-            onComplete: function() {
-                $('body').removeClass('prevent-scroll');
-                new ScrollScene({duration: 2200})
-                    .setPin('.splash-scene')
-                    .addTo(controller);
-                new ScrollScene({offset: 2200, duration: 0})
-                    .setPin('.top-section', {pushFollowers: false, spacerClass: 'topSectionSpacer'})
-                    .addTo(controller);
-                // ScrollMagic will not calculate the topbar spacer correctly as it is a different height on
-                // initialisation from when we need it to be fixed and the rest of the page scroll.
-                // So we need to update the minimum height of the spacer based on the CSS:
-                $('.topSectionSpacer').css('min-height', TOP_MENU_HEIGHT * vmax);
-            }
-        });
+        tl;
 
     // Need to manually reset image container sizes to match images
     var maxImageHeight = vh * 125;
@@ -38,6 +23,27 @@ $(document).ready(function() {
     tl.add( TweenMax.to('.down-arrow i', 0.5, {opacity: 1, repeat: 2, yoyo: true}), '-=0.5' );
 
     if (vw >= 6.4) {
+
+      tl = new TimelineLite({
+          paused: true,
+          onComplete: function() {
+              $('body').removeClass('prevent-scroll');
+              new ScrollScene({duration: 2200})
+                  .setPin('.splash-scene')
+                  .addTo(controller);
+              new ScrollScene({offset: 2200, duration: 0})
+                  .setPin('.top-section', {pushFollowers: false, spacerClass: 'topSectionSpacer'})
+                  .addTo(controller);
+              // ScrollMagic will not calculate the topbar spacer correctly as it is a different height on
+              // initialisation from when we need it to be fixed and the rest of the page scroll.
+              // So we need to update the minimum height of the spacer based on the CSS:
+              $('.topSectionSpacer').css('min-height', TOP_MENU_HEIGHT * vmax);
+          }
+      });
+
+      tl.add( TweenLite.to('.top-spacer', 2, {height: topSectionFactor * vmax}), "+=1" );
+      tl.add( TweenLite.to('.lois-blurb', 1, {opacity: 1}) );
+      tl.add( TweenMax.to('.down-arrow i', 0.5, {opacity: 1, repeat: 2, yoyo: true}), '-=0.5' );
 
       new ScrollScene({offset: 0, duration: 400})
           .setTween(TweenLite.to('.lois-blurb', 1, {opacity: 0}) )
@@ -88,7 +94,23 @@ $(document).ready(function() {
 
     else {
 
-      tl.add( TweenLite.to('.lois-blurb', 1, {opacity: 0}, "+=2") );
+      tl = new TimelineLite({
+          paused: true,
+          onComplete: function() {
+              $('body').removeClass('prevent-scroll');
+              new ScrollScene({duration: 0})
+                  .setPin('.top-section', {pushFollowers: false, spacerClass: 'topSectionSpacer'})
+                  .addTo(controller);
+              // ScrollMagic will not calculate the topbar spacer correctly as it is a different height on
+              // initialisation from when we need it to be fixed and the rest of the page scroll.
+              // So we need to update the minimum height of the spacer based on the CSS:
+              $('.topSectionSpacer').css('min-height', TOP_MENU_HEIGHT * vmax);
+          }
+      });
+
+      tl.add( TweenLite.to('.top-spacer', 2, {height: topSectionFactor * vmax}), "+=1" );
+      tl.add( TweenLite.to('.lois-blurb', 1, {opacity: 1}) );
+      tl.add( TweenLite.to('.lois-blurb', 1, {opacity: 0}, "+=5") );
       tl.add( TweenLite.to('.top-spacer', 2, {height: 0}), "-=0.5" );
       tl.add( TweenLite.to('.top-menu .centered-button', 2, {height: LOIS_BUTTON_SIZE * vmax, width: LOIS_BUTTON_SIZE * vmax}), "-=2" );
       tl.add( TweenLite.to('.top-menu .centered-button .button-text', 2, {'font-size': LOIS_BUTTON_SIZE * 0.26 * vmax}), "-=2" );
