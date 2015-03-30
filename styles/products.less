@@ -4,6 +4,8 @@
 
 @grid-width: 1000px;
 @border-size: 2rem;
+@image-height-mobile: 50rem;
+@image-height-mobile-half: @image-height-mobile / 2;
 
 #main.shop-sections {
 
@@ -25,8 +27,12 @@
 
 		@media @mobile {
 			.intrinsic {
-				max-height: 50rem;
+				height: @image-height-mobile;
 				overflow-y: hidden;
+
+				img {
+					height: calc(@image-height-mobile-half ~" - 50%");
+				}
 
 				.image-caption-wrapper .image-caption p {
 					font-size: 3.5rem;
