@@ -55,6 +55,9 @@ $(document).ready(function() {
       new ScrollScene({offset: 200, duration: 800})
           .setTween(TweenLite.to('.top-menu .centered-button .button-text', 2, {'font-size': LOIS_BUTTON_SIZE * 0.26 * vmax}) )
           .addTo(controller);
+      new ScrollScene({offset: 200, duration: 800})
+          .setTween(TweenLite.to('.top-menu.collapsible .centered-button', 2, {'margin-top': 0}) )
+          .addTo(controller);
 
       $('.top-menu').css('height', TOP_MENU_HEIGHT * vmax);
       // new ScrollScene({offset: 200, duration: 800})
