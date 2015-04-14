@@ -23,7 +23,7 @@ $(document).ready(function() {
       tl = new TimelineLite({
           paused: true,
           onComplete: function() {
-              $('body').removeClass('prevent-scroll');
+              // $('body').removeClass('prevent-scroll');
               new ScrollScene({duration: 2200})
                   .setPin('.splash-scene')
                   .addTo(controller);
@@ -37,8 +37,10 @@ $(document).ready(function() {
           }
       });
 
-      tl.add( TweenLite.to('.top-spacer', 2, {height: topSectionFactor * vmax}), "+=1" );
-      tl.add( TweenLite.to('.lois-blurb', 1, {opacity: 1}) );
+      $('.top-spacer').css('height', (topSectionFactor * vmax) + 'px');
+      // tl.add( TweenLite.to('.top-spacer', 2, {height: topSectionFactor * vmax}), "+=1" );
+      $('.lois-blurb').css('opacity', 1);
+      // tl.add( TweenLite.to('.lois-blurb', 1, {opacity: 1}) );
       tl.add( TweenMax.to('.down-arrow i', 0.5, {opacity: 1, repeat: 2, yoyo: true}), '-=0.5' );
 
       new ScrollScene({offset: 0, duration: 400})
@@ -61,12 +63,14 @@ $(document).ready(function() {
           .setTween(TweenLite.to('.top-menu .centered-button', 1, {top: ((LOIS_BUTTON_SIZE * 0.5) + LOIS_BUTTON_BORDER) * vmax}))
           .addTo(controller);
 
-      new ScrollScene({offset: 1000, duration: 600})
-          .setTween(TweenLite.to('.top-menu .menu-items .item', 1, {x: 0}))
-          .addTo(controller);
-      new ScrollScene({offset: 1200, duration: 400})
-          .setTween(TweenLite.to('.top-menu .menu-items', 1, {opacity: 1}))
-          .addTo(controller);
+      $('.top-menu .menu-items .item').css('left', 0);
+      $('.top-menu .menu-items').css('opacity', 1);
+      // new ScrollScene({offset: 1000, duration: 600})
+      //     .setTween(TweenLite.to('.top-menu .menu-items .item', 1, {x: 0}))
+      //     .addTo(controller);
+      // new ScrollScene({offset: 1200, duration: 400})
+      //     .setTween(TweenLite.to('.top-menu .menu-items', 1, {opacity: 1}))
+      //     .addTo(controller);
       new ScrollScene({offset: 1200, duration: 400})
           .setTween(TweenLite.to('.lois-blurb', 1, {height: 0}))
           .addTo(controller).on('');
@@ -79,7 +83,7 @@ $(document).ready(function() {
 
       $(document).ready(function() {
         controller.scrollTo(0);
-        $('body').addClass('prevent-scroll');
+        // $('body').addClass('prevent-scroll');
         $('.splash-scene').removeClass('invisible');
         setTimeout(function() {
           tl.play();
@@ -118,7 +122,7 @@ $(document).ready(function() {
 
       $(document).ready(function() {
         controller.scrollTo(0);
-        $('body').addClass('prevent-scroll');
+        // $('body').addClass('prevent-scroll');
         $('.splash-scene').removeClass('invisible');
         setTimeout(function() {
           tl.play();
