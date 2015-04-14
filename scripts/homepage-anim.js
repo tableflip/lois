@@ -24,9 +24,9 @@ $(document).ready(function() {
           paused: true,
           onComplete: function() {
               // $('body').removeClass('prevent-scroll');
-              new ScrollScene({duration: 2200})
-                  .setPin('.splash-scene')
-                  .addTo(controller);
+              // new ScrollScene({duration: 2200})
+              //     .setPin('.splash-scene')
+              //     .addTo(controller);
               new ScrollScene({offset: 2200, duration: 0})
                   .setPin('.top-section', {pushFollowers: false, spacerClass: 'topSectionSpacer'})
                   .addTo(controller);
@@ -56,14 +56,15 @@ $(document).ready(function() {
           .setTween(TweenLite.to('.top-menu .centered-button .button-text', 2, {'font-size': LOIS_BUTTON_SIZE * 0.26 * vmax}) )
           .addTo(controller);
 
-      new ScrollScene({offset: 200, duration: 800})
-          .setTween(TweenLite.to('.top-menu', 1, {height: TOP_MENU_HEIGHT * vmax}))
-          .addTo(controller);
+      $('.top-menu').css('height', TOP_MENU_HEIGHT * vmax);
+      // new ScrollScene({offset: 200, duration: 800})
+      //     .setTween(TweenLite.to('.top-menu', 1, {height: TOP_MENU_HEIGHT * vmax}))
+      //     .addTo(controller);
       new ScrollScene({offset: 200, duration: 800})
           .setTween(TweenLite.to('.top-menu .centered-button', 1, {top: ((LOIS_BUTTON_SIZE * 0.5) + LOIS_BUTTON_BORDER) * vmax}))
           .addTo(controller);
 
-      $('.top-menu .menu-items .item').css('left', 0);
+      $('.top-menu .menu-items .item').css('transform', 'translateX(0)');
       $('.top-menu .menu-items').css('opacity', 1);
       // new ScrollScene({offset: 1000, duration: 600})
       //     .setTween(TweenLite.to('.top-menu .menu-items .item', 1, {x: 0}))
