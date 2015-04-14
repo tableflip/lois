@@ -3,18 +3,30 @@
 
 .icon-section {
 
+	float: left;
 	display: inline-block;
-	width: 25%;
+	width: 16%;
 	vertical-align: top;
 	min-width: 100px;
-	margin-left: auto;
-	margin-right: auto;
+	// margin-left: auto;
+	// margin-right: auto;
 
 	.maker-icon {
 		max-width: @grid-width * 0.2;
+		// margin-left: auto;
+		// margin-right: auto;
+		padding-top: 0;
+		padding: 0;
+	}
+
+	@media @mobile {
+		float: none;
 		margin-left: auto;
 		margin-right: auto;
-		padding-top: 0;
+		.maker-icon {
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 
 }
@@ -27,6 +39,7 @@
 
 .video-section {
 
+	float: right;
 	display: inline-block;
 	width: @makerVideoWidth;
 	margin-left: 5%;
