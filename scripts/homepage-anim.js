@@ -100,9 +100,6 @@ $(document).ready(function() {
         }, 500);
       });
 
-      // Placeholder for if/when video is enabled
-
-      // Handle messages received from the player
       onMessageReceived = function(e) {
         if (!(/^https?:\/\/player.vimeo.com/).test(event.origin)) return false;
 
@@ -110,14 +107,17 @@ $(document).ready(function() {
 
         var data = JSON.parse(e.data);
 
-        if (data.event === 'ready') console.log(event.srcElement);
+        if (data.event === 'ready') {
+
+          for (i = 0; i < videos.length; i++) {
+            video = videos[i];
+            video.contentWindow.postMessage({method: 'setVolume', value: 0}, '*');
+            video.contentWindow.postMessage({method: 'setLoop', value: true}, '*');
+            video.contentWindow.postMessage({method: 'play', value: null}, '*');
+          }
+
+        }
       };
-      // for (i = 0; i < videos.length; i++) {
-      //   video = videos[i];
-      //   video.contentWindow.postMessage({method: 'setVolume', value: 0}, '*');
-      //   video.contentWindow.postMessage({method: 'setLoop', value: true}, '*');
-      //   video.contentWindow.postMessage({method: 'play', value: null}, '*');
-      // }
 
     }
 
@@ -158,13 +158,24 @@ $(document).ready(function() {
         }, 500);
       });
 
-      // Placeholder for if/when video is enabled (no autoplay for mobile)
+      onMessageReceived = function(e) {
+        if (!(/^https?:\/\/player.vimeo.com/).test(event.origin)) return false;
 
-      for (i = 0; i < videos.length; i++) {
-        video = videos[i];
-        // video.contentWindow.postMessage({method: 'setVolume', value: 0}, '*');
-        video.contentWindow.postMessage({method: 'play', value: null}, '*');
-      }
+        if (playerOrigin === '*') playerOrigin = event.origin;
+
+        var data = JSON.parse(e.data);
+
+        if (data.event === 'ready') {
+
+          for (i = 0; i < videos.length; i++) {
+            video = videos[i];
+            video.contentWindow.postMessage({method: 'setVolume', value: 0}, '*');
+            video.contentWindow.postMessage({method: 'setLoop', value: true}, '*');
+            video.contentWindow.postMessage({method: 'play', value: null}, '*');
+          }
+
+        }
+      };
 
     }
 
