@@ -62,7 +62,7 @@
 						<squarespace:block-field id="shop-image-{squarespace.page-id}" columns="1" />
 					</div>
 
-					<a ><div class="splash-social full-height">
+					<a href="/shop-sections"><div class="splash-social full-height">
 						<div class="social-content">
 							<div class="header">
 								shop the collection
@@ -80,7 +80,7 @@
 						<squarespace:block-field id="made-image-{squarespace.page-id}" columns="1" />
 					</div>
 
-					<a ><div class="splash-social full-height">
+					<a href="/makers"><div class="splash-social full-height">
 						<div class="social-content">
 							<div class="header">
 								watch the films
@@ -94,7 +94,7 @@
 
 				<div class="splash-image four">
 
-					<a >
+					<a href="/workshops">
 						<div class="image-block">
 							<squarespace:block-field id="fun-image-{squarespace.page-id}" columns="1" />
 						</div>
