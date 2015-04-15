@@ -14,7 +14,9 @@ $(document).ready(function() {
 
     var videos = document.getElementsByTagName('iframe'),
         video,
-        i;
+        i,
+        playerOrigin = '*',
+        onMessageReceived;
 
     // Need to manually reset image container sizes to match images
     var maxImageHeight = vh * 125;
@@ -100,11 +102,22 @@ $(document).ready(function() {
 
       // Placeholder for if/when video is enabled
 
-      for (i = 0; i < videos.length; i++) {
-        video = videos[i];
-        video.contentWindow.postMessage({method: 'setVolume', value: 0}, '*');
-        video.contentWindow.postMessage({method: 'play', value: null}, '*');
-      }
+      // Handle messages received from the player
+      onMessageReceived = function(e) {
+        if (!(/^https?:\/\/player.vimeo.com/).test(event.origin)) return false;
+
+        if (playerOrigin === '*') playerOrigin = event.origin;
+
+        var data = JSON.parse(e.data);
+
+        if (data.event === 'ready') console.log(event.origin);
+      };
+      // for (i = 0; i < videos.length; i++) {
+      //   video = videos[i];
+      //   video.contentWindow.postMessage({method: 'setVolume', value: 0}, '*');
+      //   video.contentWindow.postMessage({method: 'setLoop', value: true}, '*');
+      //   video.contentWindow.postMessage({method: 'play', value: null}, '*');
+      // }
 
     }
 
@@ -154,4 +167,13 @@ $(document).ready(function() {
       }
 
     }
+
+    // Listen for messages from the video player
+    if (window.addEventListener){
+        window.addEventListener('message', onMessageReceived, false);
+    }
+    else {
+        window.attachEvent('onmessage', onMessageReceived, false);
+    }
+
 });
