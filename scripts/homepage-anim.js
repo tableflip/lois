@@ -12,6 +12,10 @@ $(document).ready(function() {
         topSectionFactor = (vh > vw && vw <= 4) ? 30.5 : 21.5,
         tl;
 
+    var videos = document.getElementsByTagName('iframe'),
+        video,
+        i;
+
     // Need to manually reset image container sizes to match images
     var maxImageHeight = vh * 125;
     $('img').bind('load', function() {
@@ -96,10 +100,11 @@ $(document).ready(function() {
 
       // Placeholder for if/when video is enabled
 
-      document.getElementsByTagName('iframe').forEach(function(video) {
+      for (i = 0; i < videos.length; i++) {
+        video = videos[i];
         video.contentWindow.postMessage({method: 'setVolume', value: 0}, '*');
         video.contentWindow.postMessage({method: 'play', value: null}, '*');
-      });
+      }
 
     }
 
@@ -140,12 +145,13 @@ $(document).ready(function() {
         }, 500);
       });
 
-      // Placeholder for if/when video is enabled (no autoplay for mobile)      
+      // Placeholder for if/when video is enabled (no autoplay for mobile)
 
-      document.getElementsByTagName('iframe').forEach(function(video) {
-        video.contentWindow.postMessage({method: 'setVolume', value: 0}, '*');
-        // video.contentWindow.postMessage({method: 'play', value: null}, '*');
-      });
+      for (i = 0; i < videos.length; i++) {
+        video = videos[i];
+        // video.contentWindow.postMessage({method: 'setVolume', value: 0}, '*');
+        video.contentWindow.postMessage({method: 'play', value: null}, '*');
+      }
 
     }
 });
