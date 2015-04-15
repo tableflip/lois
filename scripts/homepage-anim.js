@@ -110,7 +110,7 @@ $(document).ready(function() {
 
         var data = JSON.parse(e.data);
 
-        if (data.event === 'ready') console.log(event);
+        if (data.event === 'ready') console.log(event.srcElement.id);
       };
       // for (i = 0; i < videos.length; i++) {
       //   video = videos[i];
