@@ -94,6 +94,13 @@ $(document).ready(function() {
         }, 500);
       });
 
+      // Placeholder for if/when video is enabled
+
+      document.getElementsByTagName('iframe').forEach(function(video) {
+        video.contentWindow.postMessage({method: 'setVolume', value: 0}, '*');
+        video.contentWindow.postMessage({method: 'play', value: null}, '*');
+      });
+
     }
 
     else {
@@ -131,6 +138,13 @@ $(document).ready(function() {
         setTimeout(function() {
           tl.play();
         }, 500);
+      });
+
+      // Placeholder for if/when video is enabled (no autoplay for mobile)      
+
+      document.getElementsByTagName('iframe').forEach(function(video) {
+        video.contentWindow.postMessage({method: 'setVolume', value: 0}, '*');
+        // video.contentWindow.postMessage({method: 'play', value: null}, '*');
       });
 
     }
