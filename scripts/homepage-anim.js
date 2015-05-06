@@ -30,10 +30,10 @@ $(document).ready(function() {
           paused: true,
           onComplete: function() {
               // $('body').removeClass('prevent-scroll');
-              new ScrollScene({duration: 1500})
+              new ScrollScene({duration: 1300})
                   .setPin('.splash-scene')
                   .addTo(controller);
-              new ScrollScene({offset: 1500, duration: 0})
+              new ScrollScene({offset: 1300, duration: 0})
                   .setPin('.top-section', {pushFollowers: false, spacerClass: 'topSectionSpacer'})
                   .addTo(controller);
               // ScrollMagic will not calculate the topbar spacer correctly as it is a different height on
