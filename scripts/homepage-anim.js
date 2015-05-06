@@ -50,19 +50,19 @@ $(document).ready(function() {
       tl.add( TweenMax.to('.down-arrow i', 0.5, {opacity: 1, repeat: 2, yoyo: true}), '-=0.5' );
 
       new ScrollMagic.Scene({offset: 0, duration: 400})
-          .setTween('.lois-blurb', 1, {opacity: 0})
+          .setTween(TweenLite.to('.lois-blurb', 1, {opacity: 0}) )
           .addTo(controller);
       new ScrollMagic.Scene({offset: 200, duration: 800})
-          .setTween('.top-spacer', 2, {height: 0, ease:Power4.easeIn})
+          .setTween(TweenLite.to('.top-spacer', 2, {height: 0, ease:Power4.easeIn}) )
           .addTo(controller);
       new ScrollMagic.Scene({offset: 200, duration: 800})
-          .setTween('.top-menu .centered-button', 2, {height: LOIS_BUTTON_SIZE * vmax, width: LOIS_BUTTON_SIZE * vmax})
+          .setTween(TweenLite.to('.top-menu .centered-button', 2, {height: LOIS_BUTTON_SIZE * vmax, width: LOIS_BUTTON_SIZE * vmax}) )
           .addTo(controller);
       new ScrollMagic.Scene({offset: 200, duration: 800})
-          .setTween('.top-menu .centered-button .button-text', 2, {'font-size': LOIS_BUTTON_SIZE * 0.26 * vmax})
+          .setTween(TweenLite.to('.top-menu .centered-button .button-text', 2, {'font-size': LOIS_BUTTON_SIZE * 0.26 * vmax}) )
           .addTo(controller);
       new ScrollMagic.Scene({offset: 200, duration: 800})
-          .setTween('.top-menu.collapsible .centered-button', 2, {'margin-top': 0})
+          .setTween(TweenLite.to('.top-menu.collapsible .centered-button', 2, {'margin-top': 0}) )
           .addTo(controller);
 
       $('.top-menu').css('height', TOP_MENU_HEIGHT * vmax);
@@ -76,16 +76,16 @@ $(document).ready(function() {
       $('.top-menu .menu-items .item').css('transform', 'translateX(0)');
       $('.top-menu .menu-items').css('opacity', 1);
       // new ScrollMagic.Scene({offset: 1000, duration: 600})
-      //     .setTween('.top-menu .menu-items .item', 1, {x: 0})
+      //     .setTween(TweenLite.to('.top-menu .menu-items .item', 1, {x: 0}))
       //     .addTo(controller);
       // new ScrollMagic.Scene({offset: 1200, duration: 400})
-      //     .setTween('.top-menu .menu-items', 1, {opacity: 1})
+      //     .setTween(TweenLite.to('.top-menu .menu-items', 1, {opacity: 1}))
       //     .addTo(controller);
       new ScrollMagic.Scene({offset: 1200, duration: 400})
-          .setTween('.lois-blurb', 1, {height: 0, ease:Power4.easeIn})
+          .setTween(TweenLite.to('.lois-blurb', 1, {height: 0, ease:Power4.easeIn}))
           .addTo(controller).on('');
       new ScrollMagic.Scene({triggerElement: '.splash-legal', triggerHook: 0.5})
-          .setTween('.down-arrow i', 0.5, {opacity: 0})
+          .setTween(TweenLite.to('.down-arrow i', 0.5, {opacity: 0}))
           .addTo(controller);
       new ScrollMagic.Scene({triggerElement: '.splash-legal', triggerHook: 0.7})
           .setClassToggle('.down-arrow i', 'hidden')
