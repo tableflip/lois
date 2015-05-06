@@ -30,10 +30,10 @@ $(document).ready(function() {
           paused: true,
           onComplete: function() {
               // $('body').removeClass('prevent-scroll');
-              new ScrollScene({duration: 1000})
+              new ScrollMagic.Scene({duration: 1000})
                   .setPin('.splash-scene')
                   .addTo(controller);
-              new ScrollScene({offset: 1000, duration: 0})
+              new ScrollMagic.Scene({offset: 1000, duration: 0})
                   .setPin('.top-section', {pushFollowers: false, spacerClass: 'topSectionSpacer'})
                   .addTo(controller);
               // ScrollMagic will not calculate the topbar spacer correctly as it is a different height on
@@ -49,45 +49,45 @@ $(document).ready(function() {
       // tl.add( TweenLite.to('.lois-blurb', 1, {opacity: 1}) );
       tl.add( TweenMax.to('.down-arrow i', 0.5, {opacity: 1, repeat: 2, yoyo: true}), '-=0.5' );
 
-      new ScrollScene({offset: 0, duration: 400})
+      new ScrollMagic.Scene({offset: 0, duration: 400})
           .setTween(TweenLite.to('.lois-blurb', 1, {opacity: 0}) )
           .addTo(controller);
-      new ScrollScene({offset: 200, duration: 800})
+      new ScrollMagic.Scene({offset: 200, duration: 800})
           .setTween(TweenLite.to('.top-spacer', 2, {height: 0, ease:Power4.easeIn}) )
           .addTo(controller);
-      new ScrollScene({offset: 200, duration: 800})
+      new ScrollMagic.Scene({offset: 200, duration: 800})
           .setTween(TweenLite.to('.top-menu .centered-button', 2, {height: LOIS_BUTTON_SIZE * vmax, width: LOIS_BUTTON_SIZE * vmax}) )
           .addTo(controller);
-      new ScrollScene({offset: 200, duration: 800})
+      new ScrollMagic.Scene({offset: 200, duration: 800})
           .setTween(TweenLite.to('.top-menu .centered-button .button-text', 2, {'font-size': LOIS_BUTTON_SIZE * 0.26 * vmax}) )
           .addTo(controller);
-      new ScrollScene({offset: 200, duration: 800})
+      new ScrollMagic.Scene({offset: 200, duration: 800})
           .setTween(TweenLite.to('.top-menu.collapsible .centered-button', 2, {'margin-top': 0}) )
           .addTo(controller);
 
       $('.top-menu').css('height', TOP_MENU_HEIGHT * vmax);
-      // new ScrollScene({offset: 200, duration: 800})
+      // new ScrollMagic.Scene({offset: 200, duration: 800})
       //     .setTween(TweenLite.to('.top-menu', 1, {height: TOP_MENU_HEIGHT * vmax}))
       //     .addTo(controller);
-      new ScrollScene({offset: 200, duration: 800})
+      new ScrollMagic.Scene({offset: 200, duration: 800})
           .setTween(TweenLite.to('.top-menu .centered-button', 1, {top: ((LOIS_BUTTON_SIZE * 0.5) + LOIS_BUTTON_BORDER) * vmax}))
           .addTo(controller);
 
       $('.top-menu .menu-items .item').css('transform', 'translateX(0)');
       $('.top-menu .menu-items').css('opacity', 1);
-      // new ScrollScene({offset: 1000, duration: 600})
+      // new ScrollMagic.Scene({offset: 1000, duration: 600})
       //     .setTween(TweenLite.to('.top-menu .menu-items .item', 1, {x: 0}))
       //     .addTo(controller);
-      // new ScrollScene({offset: 1200, duration: 400})
+      // new ScrollMagic.Scene({offset: 1200, duration: 400})
       //     .setTween(TweenLite.to('.top-menu .menu-items', 1, {opacity: 1}))
       //     .addTo(controller);
-      new ScrollScene({offset: 1200, duration: 400})
+      new ScrollMagic.Scene({offset: 1200, duration: 400})
           .setTween(TweenLite.to('.lois-blurb', 1, {height: 0, ease:Power4.easeIn}))
           .addTo(controller).on('');
-      new ScrollScene({triggerElement: '.splash-legal', triggerHook: 0.5})
+      new ScrollMagic.Scene({triggerElement: '.splash-legal', triggerHook: 0.5})
           .setTween(TweenLite.to('.down-arrow i', 0.5, {opacity: 0}))
           .addTo(controller);
-      new ScrollScene({triggerElement: '.splash-legal', triggerHook: 0.7})
+      new ScrollMagic.Scene({triggerElement: '.splash-legal', triggerHook: 0.7})
           .setClassToggle('.down-arrow i', 'hidden')
           .addTo(controller);
 
@@ -127,7 +127,7 @@ $(document).ready(function() {
           paused: true,
           onComplete: function() {
               $('body').removeClass('prevent-scroll');
-              new ScrollScene({duration: 0})
+              new ScrollMagic.Scene({duration: 0})
                   .setPin('.top-section', {pushFollowers: false, spacerClass: 'topSectionSpacer'})
                   .addTo(controller);
               // ScrollMagic will not calculate the topbar spacer correctly as it is a different height on
