@@ -4,7 +4,7 @@ $(document).ready(function() {
         LOIS_BUTTON_BORDER = 0.3,
         TOP_MENU_HEIGHT = 4.6;
 
-    var controller = new ScrollMagic(),
+    var controller = new ScrollMagic.Controller(),
         // topSectionPin,
         vw = $(window).width() / 100,
         vh = $(window).height() / 100,
