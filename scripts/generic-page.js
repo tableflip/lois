@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
-    var controller = new ScrollMagic();
+    var controller = new ScrollMagic.Controller();
 
-    new ScrollScene()
+    new ScrollMagic.Scene()
       .setPin('.top-section')
       .addTo(controller);
 });
