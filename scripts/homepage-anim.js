@@ -53,7 +53,7 @@ $(document).ready(function() {
           .setTween(TweenLite.to('.lois-blurb', 1, {opacity: 0}) )
           .addTo(controller);
       new ScrollScene({offset: 200, duration: 800})
-          .setTween(TweenLite.to('.top-spacer', 2, {height: 0}) )
+          .setTween(TweenLite.to('.top-spacer', 2, {height: 0, ease:Linear.easeNone}) )
           .addTo(controller);
       new ScrollScene({offset: 200, duration: 800})
           .setTween(TweenLite.to('.top-menu .centered-button', 2, {height: LOIS_BUTTON_SIZE * vmax, width: LOIS_BUTTON_SIZE * vmax}) )
@@ -82,7 +82,7 @@ $(document).ready(function() {
       //     .setTween(TweenLite.to('.top-menu .menu-items', 1, {opacity: 1}))
       //     .addTo(controller);
       new ScrollScene({offset: 1200, duration: 400})
-          .setTween(TweenLite.to('.lois-blurb', 1, {height: 0}))
+          .setTween(TweenLite.to('.lois-blurb', 1, {height: 0, ease:Linear.easeNone}))
           .addTo(controller).on('');
       new ScrollScene({triggerElement: '.splash-legal', triggerHook: 0.5})
           .setTween(TweenLite.to('.down-arrow i', 0.5, {opacity: 0}))
