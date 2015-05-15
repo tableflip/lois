@@ -10,7 +10,7 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/jquery.ScrollMagic.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
-		<squarespace:script src="homepage-anim.js" combo="false" />
+		<script src="homepage-anim.js"></script>
 	</head>
 	<body class="{squarespace.page-classes}" id="{squarespace.page-id}">
 
