@@ -13,8 +13,6 @@
 
 		<div class="splash-scene">
 
-			<div class="back-button" onclick="history.back(-1)">back <i class="icon-lois-slashes"></i></div>
-
 			<div class="top-section">
 
 				<div class="top-spacer">
